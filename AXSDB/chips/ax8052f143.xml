@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<axchip>
+  <chip name="AX8052F143" hide="0"/>
+  <include name="AX8052"/>
+  <autodetect priority="2">
+    <save addr="0x7044" addrspace="xram"/>
+    <write addr="0x7044" addrspace="xram" value="0x47" mask="0xff"/>
+    <save addr="0xb1" addrspace="sfr"/>
+    <write addr="0xb1" addrspace="sfr" value="0x08" mask="0xff"/>
+    <save addr="0x8e" addrspace="sfr"/>
+    <write addr="0x8e" addrspace="sfr" value="0x15" mask="0xff"/>
+    <save addr="0x8c" addrspace="sfr"/>
+    <write addr="0x8c" addrspace="sfr" value="0x00" mask="0xff"/>
+    <compare addr="0x4000" addrspace="xram" value="0x51" mask="0xff"/>
+    <save addr="0x4001" addrspace="xram"/>
+    <write addr="0x4001" addrspace="xram" value="0x55" mask="0xff"/>
+    <compare addr="0x4001" addrspace="xram" value="0x55" mask="0xff"/>
+    <write addr="0x4001" addrspace="xram" value="0xaa" mask="0xff"/>
+    <compare addr="0x4001" addrspace="xram" value="0xaa" mask="0xff"/>
+    <save addr="0x420b" addrspace="xram"/>
+    <write addr="0x420b" addrspace="xram" value="0x55" mask="0xff"/>
+    <compare addr="0x420b" addrspace="xram" value="0x55" mask="0xff"/>
+    <write addr="0x420b" addrspace="xram" value="0xaa" mask="0xff"/>
+    <compare addr="0x420b" addrspace="xram" value="0xaa" mask="0xff"/>
+  </autodetect>
+  <registers>
+    <reggroup name="Radio Revision and Interface Probing">
+      <register name="SILICONREVISION" addr="0x4000" addrspace="xram" readmask="0xff" writemask="0x00" default="0x51" readsafe="1" mappedtox="0" description="Silicon Revision"/>
+      <register name="SCRATCH" addr="0x4001" addrspace="xram" readmask="0xff" writemask="0xff" default="0xc5" readsafe="1" mappedtox="0" description="Scratch"/>
+    </reggroup>
+    <reggroup name="Radio Operating Mode">
+      <register name="PWRMODE" addr="0x4002" addrspace="xram" readmask="0xef" writemask="0xef" default="0x60" readsafe="1" mappedtox="0" description="Power Mode"/>
+    </reggroup>
+    <reggroup name="Radio Voltage Regulator">
+      <register name="POWSTAT" addr="0x4003" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Power Management Status"/>
+      <register name="POWSTICKYSTAT" addr="0x4004" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Power Management Sticky Status"/>
+      <register name="POWIRQMASK" addr="0x4005" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Power Management Interrupt Mask"/>
+      <register name="POWCTRL1" addr="0x4f08" addrspace="xram" readmask="0xff" writemask="0xff" default="0x04" readsafe="1" mappedtox="0" description="Voltage Regulator Control"/>
+      <register name="REF" addr="0x4f0d" addrspace="xram" readmask="0x07" writemask="0x07" default="0x04" readsafe="1" mappedtox="0" description="Voltage Reference Control"/>
+    </reggroup>
+    <reggroup name="Radio Interrupt Control">
+      <register name="IRQMASK0" addr="0x4007" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="IRQ Mask 0"/>
+      <register name="IRQMASK1" addr="0x4006" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="IRQ Mask 1"/>
+      <register name="RADIOEVENTMASK0" addr="0x4009" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Radio Event Mask 0"/>
+      <register name="RADIOEVENTMASK1" addr="0x4008" addrspace="xram" readmask="0x01" writemask="0x01" default="0x00" readsafe="1" mappedtox="0" description="Radio Event Mask 1"/>
+      <register name="IRQINVERSION0" addr="0x400b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="IRQ Inversion 0"/>
+      <register name="IRQINVERSION1" addr="0x400a" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="IRQ Inversion 1"/>
+      <register name="IRQREQUEST0" addr="0x400d" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="IRQ Request 0"/>
+      <register name="IRQREQUEST1" addr="0x400c" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="IRQ Request 1"/>
+      <register name="RADIOEVENTREQ0" addr="0x400f" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Radio Event Request 0"/>
+      <register name="RADIOEVENTREQ1" addr="0x400e" addrspace="xram" readmask="0x01" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Radio Event Request 1"/>
+    </reggroup>
+    <reggroup name="Radio Modulation and Framing">
+      <register name="MODULATION" addr="0x4010" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x08" readsafe="1" mappedtox="0" description="Modulation"/>
+      <register name="ENCODING" addr="0x4011" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x02" readsafe="1" mappedtox="0" description="Encoding"/>
+      <register name="FRAMING" addr="0x4012" addrspace="xram" readmask="0x7f" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Framing Mode"/>
+      <register name="CRCINIT0" addr="0x4017" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 0"/>
+      <register name="CRCINIT1" addr="0x4016" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 1"/>
+      <register name="CRCINIT2" addr="0x4015" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 2"/>
+      <register name="CRCINIT3" addr="0x4014" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 3"/>
+    </reggroup>
+    <reggroup name="Radio Forward Error Correction">
+      <register name="FEC" addr="0x4018" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Forward Error Correction"/>
+      <register name="FECSYNC" addr="0x4019" addrspace="xram" readmask="0xff" writemask="0xff" default="0x62" readsafe="1" mappedtox="0" description="Forward Error Correction Sync Threshold"/>
+      <register name="FECSTATUS" addr="0x401a" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Forward Error Correction Status"/>
+    </reggroup>
+    <reggroup name="Radio Status">
+      <register name="RADIOSTATE" addr="0x401c" addrspace="xram" readmask="0x0f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Radio Controller State"/>
+      <register name="XTALSTATUS" addr="0x401d" addrspace="xram" readmask="0x01" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Crystal Oscillator Status"/>
+    </reggroup>
+    <reggroup name="Radio Pin Configuration">
+      <register name="PINSTATE" addr="0x4020" addrspace="xram" readmask="0x3f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Pin State"/>
+      <register name="PINFUNCSYSCLK" addr="0x4021" addrspace="xram" readmask="0xdf" writemask="0xdf" default="0x08" readsafe="1" mappedtox="0" description="Pin Function SYSCLK"/>
+      <register name="PINFUNCDCLK" addr="0x4022" addrspace="xram" readmask="0xc7" writemask="0xc7" default="0x04" readsafe="1" mappedtox="0" description="Pin Function DCLK"/>
+      <register name="PINFUNCDATA" addr="0x4023" addrspace="xram" readmask="0xc7" writemask="0xc7" default="0x87" readsafe="1" mappedtox="0" description="Pin Function DATA"/>
+      <register name="PINFUNCIRQ" addr="0x4024" addrspace="xram" readmask="0xc7" writemask="0xc7" default="0x03" readsafe="1" mappedtox="0" description="Pin Function IRQ"/>
+      <register name="PINFUNCANTSEL" addr="0x4025" addrspace="xram" readmask="0xc7" writemask="0xc7" default="0x06" readsafe="1" mappedtox="0" description="Pin Function ANTSEL"/>
+      <register name="PINFUNCPWRAMP" addr="0x4026" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0x06" readsafe="1" mappedtox="0" description="Pin Function PWRAMP"/>
+      <register name="PWRAMP" addr="0x4027" addrspace="xram" readmask="0x01" writemask="0x01" default="0x00" readsafe="1" mappedtox="0" description="PWRAMP Control"/>
+    </reggroup>
+    <reggroup name="Radio FIFO">
+      <register name="FIFOSTAT" addr="0x4028" addrspace="xram" readmask="0xbf" writemask="0xbf" default="0x00" readsafe="1" mappedtox="0" description="FIFO Control"/>
+      <register name="FIFODATA" addr="0x4029" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="0" mappedtox="0" description="FIFO Data"/>
+      <register name="FIFOCOUNT0" addr="0x402b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Number of Words currently in FIFO 0"/>
+      <register name="FIFOCOUNT1" addr="0x402a" addrspace="xram" readmask="0x01" writemask="0x01" default="0x00" readsafe="1" mappedtox="0" description="Number of Words currently in FIFO 1"/>
+      <register name="FIFOFREE0" addr="0x402d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Number of Words that can be written to FIFO 0"/>
+      <register name="FIFOFREE1" addr="0x402c" addrspace="xram" readmask="0x01" writemask="0x01" default="0x01" readsafe="1" mappedtox="0" description="Number of Words that can be written to FIFO 1"/>
+      <register name="FIFOTHRESH0" addr="0x402f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="FIFO Threshold 0"/>
+      <register name="FIFOTHRESH1" addr="0x402e" addrspace="xram" readmask="0x01" writemask="0x01" default="0x00" readsafe="1" mappedtox="0" description="FIFO Threshold 1"/>
+    </reggroup>
+    <reggroup name="Radio Synthesizer">
+      <register name="PLLLOOP" addr="0x4030" addrspace="xram" readmask="0x8f" writemask="0x8f" default="0x09" readsafe="1" mappedtox="0" description="PLL Loop Filter Settings"/>
+      <register name="PLLCPI" addr="0x4031" addrspace="xram" readmask="0xff" writemask="0xff" default="0x08" readsafe="1" mappedtox="0" description="PLL Charge Pump Current"/>
+      <register name="PLLVCODIV" addr="0x4032" addrspace="xram" readmask="0x77" writemask="0x77" default="0x00" readsafe="1" mappedtox="0" description="PLL Divider Settings"/>
+      <register name="PLLRANGINGA" addr="0x4033" addrspace="xram" readmask="0xff" writemask="0x1f" default="0x00" readsafe="1" mappedtox="0" description="PLL Autoranging A"/>
+      <register name="FREQA0" addr="0x4037" addrspace="xram" readmask="0xff" writemask="0xff" default="0xcd" readsafe="1" mappedtox="0" description="Frequency A 0"/>
+      <register name="FREQA1" addr="0x4036" addrspace="xram" readmask="0xff" writemask="0xff" default="0xcc" readsafe="1" mappedtox="0" description="Frequency A 1"/>
+      <register name="FREQA2" addr="0x4035" addrspace="xram" readmask="0xff" writemask="0xff" default="0x34" readsafe="1" mappedtox="0" description="Frequency A 2"/>
+      <register name="FREQA3" addr="0x4034" addrspace="xram" readmask="0xff" writemask="0xff" default="0x39" readsafe="1" mappedtox="0" description="Frequency A 3"/>
+      <register name="PLLLOOPBOOST" addr="0x4038" addrspace="xram" readmask="0x8f" writemask="0x8f" default="0x0d" readsafe="1" mappedtox="0" description="PLL Loop Filter Settings (Boosted)"/>
+      <register name="PLLCPIBOOST" addr="0x4039" addrspace="xram" readmask="0xff" writemask="0xff" default="0xc8" readsafe="1" mappedtox="0" description="PLL Charge Pump Current (Boosted)"/>
+      <register name="PLLRANGINGB" addr="0x403b" addrspace="xram" readmask="0xff" writemask="0x1f" default="0x00" readsafe="1" mappedtox="0" description="PLL Autoranging B"/>
+      <register name="FREQB0" addr="0x403f" addrspace="xram" readmask="0xff" writemask="0xff" default="0xcd" readsafe="1" mappedtox="0" description="Frequency B 0"/>
+      <register name="FREQB1" addr="0x403e" addrspace="xram" readmask="0xff" writemask="0xff" default="0xcc" readsafe="1" mappedtox="0" description="Frequency B 1"/>
+      <register name="FREQB2" addr="0x403d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x34" readsafe="1" mappedtox="0" description="Frequency B 2"/>
+      <register name="FREQB3" addr="0x403c" addrspace="xram" readmask="0xff" writemask="0xff" default="0x39" readsafe="1" mappedtox="0" description="Frequency B 3"/>
+      <register name="PLLVCOI" addr="0x4180" addrspace="xram" readmask="0xbf" writemask="0xbf" default="0x12" readsafe="1" mappedtox="0" description="PLL VCO Current"/>
+      <register name="PLLVCOIR" addr="0x4181" addrspace="xram" readmask="0x3f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="PLL VCO Current Readback"/>
+      <register name="PLLLOCKDET" addr="0x4182" addrspace="xram" readmask="0xc7" writemask="0x07" default="0x03" readsafe="1" mappedtox="0" description="PLL Lock Detect Delay"/>
+      <register name="PLLRNGCLK" addr="0x4183" addrspace="xram" readmask="0x07" writemask="0x07" default="0x03" readsafe="1" mappedtox="0" description="PLL Autoranging Clock"/>
+    </reggroup>
+    <reggroup name="Radio Signal Strength">
+      <register name="RSSI" addr="0x4040" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Received Signal Strength Indicator"/>
+      <register name="BGNDRSSI" addr="0x4041" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Background RSSI"/>
+      <register name="DIVERSITY" addr="0x4042" addrspace="xram" readmask="0x03" writemask="0x03" default="0x00" readsafe="1" mappedtox="0" description="Antenna Diversity Configuration"/>
+      <register name="AGCCOUNTER" addr="0x4043" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="AGC Counter"/>
+    </reggroup>
+    <reggroup name="Radio Receiver Tracking">
+      <register name="TRKDATARATE0" addr="0x4047" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Datarate Tracking 0"/>
+      <register name="TRKDATARATE1" addr="0x4046" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Datarate Tracking 1"/>
+      <register name="TRKDATARATE2" addr="0x4045" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Datarate Tracking 2"/>
+      <register name="TRKAMPLITUDE0" addr="0x4049" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Amplitude Tracking 0"/>
+      <register name="TRKAMPLITUDE1" addr="0x4048" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Amplitude Tracking 1"/>
+      <register name="TRKPHASE0" addr="0x404b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Phase Tracking 0"/>
+      <register name="TRKPHASE1" addr="0x404a" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Phase Tracking 1"/>
+      <register name="TRKRFFREQ0" addr="0x404f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="RF Frequency Tracking 0"/>
+      <register name="TRKRFFREQ1" addr="0x404e" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="RF Frequency Tracking 1"/>
+      <register name="TRKRFFREQ2" addr="0x404d" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="RF Frequency Tracking 2"/>
+      <register name="TRKFREQ0" addr="0x4051" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Frequency Tracking 0"/>
+      <register name="TRKFREQ1" addr="0x4050" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Frequency Tracking 1"/>
+      <register name="TRKFSKDEMOD0" addr="0x4053" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="FSK Demodulator Tracking 0"/>
+      <register name="TRKFSKDEMOD1" addr="0x4052" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="FSK Demodulator Tracking 1"/>
+      <register name="TRKAFSKDEMOD0" addr="0x4055" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AFSK Demodulator Tracking 0"/>
+      <register name="TRKAFSKDEMOD1" addr="0x4054" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AFSK Demodulator Tracking 1"/>
+    </reggroup>
+    <reggroup name="Radio Timer">
+      <register name="TIMER0" addr="0x405b" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="1MHz Timer 0"/>
+      <register name="TIMER1" addr="0x405a" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="1MHz Timer 1"/>
+      <register name="TIMER2" addr="0x4059" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="1MHz Timer 2"/>
+    </reggroup>
+    <reggroup name="Radio Wakeup Timer">
+      <register name="WAKEUPTIMER0" addr="0x4069" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Wakeup Timer 0"/>
+      <register name="WAKEUPTIMER1" addr="0x4068" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Wakeup Timer 1"/>
+      <register name="WAKEUP0" addr="0x406b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Wakeup Time 0"/>
+      <register name="WAKEUP1" addr="0x406a" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Wakeup Time 1"/>
+      <register name="WAKEUPFREQ0" addr="0x406d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Wakeup Frequency 0"/>
+      <register name="WAKEUPFREQ1" addr="0x406c" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Wakeup Frequency 1"/>
+      <register name="WAKEUPXOEARLY" addr="0x406e" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Wakeup Crystal Oscillator Early"/>
+    </reggroup>
+    <reggroup name="Radio Receiver Parameters">
+      <register name="IFFREQ0" addr="0x4101" addrspace="xram" readmask="0xff" writemask="0xff" default="0x9a" readsafe="1" mappedtox="0" description="2nd LO / IF Frequency 0"/>
+      <register name="IFFREQ1" addr="0x4100" addrspace="xram" readmask="0xff" writemask="0xff" default="0x19" readsafe="1" mappedtox="0" description="2nd LO / IF Frequency 1"/>
+      <register name="DECIMATION" addr="0x4102" addrspace="xram" readmask="0x7f" writemask="0x7f" default="0x0d" readsafe="1" mappedtox="0" description="Decimation Factor"/>
+      <register name="RXDATARATE0" addr="0x4105" addrspace="xram" readmask="0xff" writemask="0xff" default="0x8a" readsafe="1" mappedtox="0" description="Receiver Datarate 0"/>
+      <register name="RXDATARATE1" addr="0x4104" addrspace="xram" readmask="0xff" writemask="0xff" default="0x3d" readsafe="1" mappedtox="0" description="Receiver Datarate 1"/>
+      <register name="RXDATARATE2" addr="0x4103" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Receiver Datarate 2"/>
+      <register name="MAXDROFFSET0" addr="0x4108" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Maximum Receiver Datarate Offset 0"/>
+      <register name="MAXDROFFSET1" addr="0x4107" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Maximum Receiver Datarate Offset 1"/>
+      <register name="MAXDROFFSET2" addr="0x4106" addrspace="xram" readmask="0xff" writemask="0xff" default="0x9e" readsafe="1" mappedtox="0" description="Maximum Receiver Datarate Offset 2"/>
+      <register name="MAXRFOFFSET0" addr="0x410b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x87" readsafe="1" mappedtox="0" description="Maximum Receiver RF Offset 0"/>
+      <register name="MAXRFOFFSET1" addr="0x410a" addrspace="xram" readmask="0xff" writemask="0xff" default="0x16" readsafe="1" mappedtox="0" description="Maximum Receiver RF Offset 1"/>
+      <register name="MAXRFOFFSET2" addr="0x4109" addrspace="xram" readmask="0x8f" writemask="0x8f" default="0x80" readsafe="1" mappedtox="0" description="Maximum Receiver RF Offset 2"/>
+      <register name="FSKDMAX0" addr="0x410d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x80" readsafe="1" mappedtox="0" description="Four FSK Rx Maximum Deviation 0"/>
+      <register name="FSKDMAX1" addr="0x410c" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Four FSK Rx Maximum Deviation 1"/>
+      <register name="FSKDMIN0" addr="0x410f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x80" readsafe="1" mappedtox="0" description="Four FSK Rx Minimum Deviation 0"/>
+      <register name="FSKDMIN1" addr="0x410e" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="Four FSK Rx Minimum Deviation 1"/>
+      <register name="AFSKSPACE0" addr="0x4111" addrspace="xram" readmask="0xff" writemask="0xff" default="0x40" readsafe="1" mappedtox="0" description="AFSK Space (0) Frequency 0"/>
+      <register name="AFSKSPACE1" addr="0x4110" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="AFSK Space (0) Frequency 1"/>
+      <register name="AFSKMARK0" addr="0x4113" addrspace="xram" readmask="0xff" writemask="0xff" default="0x75" readsafe="1" mappedtox="0" description="AFSK Mark (1) Frequency 0"/>
+      <register name="AFSKMARK1" addr="0x4112" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="AFSK Mark (1) Frequency 1"/>
+      <register name="AFSKCTRL" addr="0x4114" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x04" readsafe="1" mappedtox="0" description="AFSK Control"/>
+      <register name="AMPLFILTER" addr="0x4115" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Amplitude Filter"/>
+      <register name="FREQUENCYLEAK" addr="0x4116" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Baseband Frequency Recovery Loop Leakiness"/>
+      <register name="RXPARAMSETS" addr="0x4117" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Receiver Parameter Set Indirection"/>
+      <register name="RXPARAMCURSET" addr="0x4118" addrspace="xram" readmask="0x1f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Receiver Parameter Current Set"/>
+    </reggroup>
+    <reggroup name="Radio Receiver Parameter Set 0">
+      <register name="AGCGAIN0" addr="0x4120" addrspace="xram" readmask="0xff" writemask="0xff" default="0x54" readsafe="1" mappedtox="0" description="AGC Speed"/>
+      <register name="AGCTARGET0" addr="0x4121" addrspace="xram" readmask="0xff" writemask="0xff" default="0x60" readsafe="1" mappedtox="0" description="AGC Target"/>
+      <register name="AGCAHYST0" addr="0x4122" addrspace="xram" readmask="0x07" writemask="0x07" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Hysteresis"/>
+      <register name="AGCMINMAX0" addr="0x4123" addrspace="xram" readmask="0x77" writemask="0x77" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Update Behaviour"/>
+      <register name="TIMEGAIN0" addr="0x4124" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf8" readsafe="1" mappedtox="0" description="Time Estimator Bandwidth"/>
+      <register name="DRGAIN0" addr="0x4125" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf2" readsafe="1" mappedtox="0" description="Data Rate Estimator Bandwidth"/>
+      <register name="PHASEGAIN0" addr="0x4126" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0xc3" readsafe="1" mappedtox="0" description="Phase Estimator Bandwidth"/>
+      <register name="FREQUENCYGAINA0" addr="0x4127" addrspace="xram" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth A"/>
+      <register name="FREQUENCYGAINB0" addr="0x4128" addrspace="xram" readmask="0xdf" writemask="0xdf" default="0x1f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth B"/>
+      <register name="FREQUENCYGAINC0" addr="0x4129" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x0a" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth C"/>
+      <register name="FREQUENCYGAIND0" addr="0x412a" addrspace="xram" readmask="0x9f" writemask="0x9f" default="0x0a" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth D"/>
+      <register name="AMPLITUDEGAIN0" addr="0x412b" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0x46" readsafe="1" mappedtox="0" description="Amplitude Estimator Bandwidth"/>
+      <register name="FREQDEV00" addr="0x412d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x20" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 0"/>
+      <register name="FREQDEV10" addr="0x412c" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 1"/>
+      <register name="FOURFSK0" addr="0x412e" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x16" readsafe="1" mappedtox="0" description="Four FSK Control"/>
+      <register name="BBOFFSRES0" addr="0x412f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Baseband Offset Compensation Resistors"/>
+    </reggroup>
+    <reggroup name="Radio Receiver Parameter Set 1">
+      <register name="AGCGAIN1" addr="0x4130" addrspace="xram" readmask="0xff" writemask="0xff" default="0x54" readsafe="1" mappedtox="0" description="AGC Speed"/>
+      <register name="AGCTARGET1" addr="0x4131" addrspace="xram" readmask="0xff" writemask="0xff" default="0x60" readsafe="1" mappedtox="0" description="AGC Target"/>
+      <register name="AGCAHYST1" addr="0x4132" addrspace="xram" readmask="0x07" writemask="0x07" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Hysteresis"/>
+      <register name="AGCMINMAX1" addr="0x4133" addrspace="xram" readmask="0x77" writemask="0x77" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Update Behaviour"/>
+      <register name="TIMEGAIN1" addr="0x4134" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf6" readsafe="1" mappedtox="0" description="Time Estimator Bandwidth"/>
+      <register name="DRGAIN1" addr="0x4135" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf1" readsafe="1" mappedtox="0" description="Data Rate Estimator Bandwidth"/>
+      <register name="PHASEGAIN1" addr="0x4136" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0xc3" readsafe="1" mappedtox="0" description="Phase Estimator Bandwidth"/>
+      <register name="FREQUENCYGAINA1" addr="0x4137" addrspace="xram" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth A"/>
+      <register name="FREQUENCYGAINB1" addr="0x4138" addrspace="xram" readmask="0xdf" writemask="0xdf" default="0x1f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth B"/>
+      <register name="FREQUENCYGAINC1" addr="0x4139" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x0b" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth C"/>
+      <register name="FREQUENCYGAIND1" addr="0x413a" addrspace="xram" readmask="0x9f" writemask="0x9f" default="0x0b" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth D"/>
+      <register name="AMPLITUDEGAIN1" addr="0x413b" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0x46" readsafe="1" mappedtox="0" description="Amplitude Estimator Bandwidth"/>
+      <register name="FREQDEV01" addr="0x413d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x20" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 0"/>
+      <register name="FREQDEV11" addr="0x413c" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 1"/>
+      <register name="FOURFSK1" addr="0x413e" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x18" readsafe="1" mappedtox="0" description="Four FSK Control"/>
+      <register name="BBOFFSRES1" addr="0x413f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Baseband Offset Compensation Resistors"/>
+    </reggroup>
+    <reggroup name="Radio Receiver Parameter Set 2">
+      <register name="AGCGAIN2" addr="0x4140" addrspace="xram" readmask="0xff" writemask="0xff" default="0x54" readsafe="1" mappedtox="0" description="AGC Speed"/>
+      <register name="AGCTARGET2" addr="0x4141" addrspace="xram" readmask="0xff" writemask="0xff" default="0x60" readsafe="1" mappedtox="0" description="AGC Target"/>
+      <register name="AGCAHYST2" addr="0x4142" addrspace="xram" readmask="0x07" writemask="0x07" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Hysteresis"/>
+      <register name="AGCMINMAX2" addr="0x4143" addrspace="xram" readmask="0x77" writemask="0x77" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Update Behaviour"/>
+      <register name="TIMEGAIN2" addr="0x4144" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf5" readsafe="1" mappedtox="0" description="Time Estimator Bandwidth"/>
+      <register name="DRGAIN2" addr="0x4145" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf0" readsafe="1" mappedtox="0" description="Data Rate Estimator Bandwidth"/>
+      <register name="PHASEGAIN2" addr="0x4146" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0xc3" readsafe="1" mappedtox="0" description="Phase Estimator Bandwidth"/>
+      <register name="FREQUENCYGAINA2" addr="0x4147" addrspace="xram" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth A"/>
+      <register name="FREQUENCYGAINB2" addr="0x4148" addrspace="xram" readmask="0xdf" writemask="0xdf" default="0x1f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth B"/>
+      <register name="FREQUENCYGAINC2" addr="0x4149" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x0d" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth C"/>
+      <register name="FREQUENCYGAIND2" addr="0x414a" addrspace="xram" readmask="0x9f" writemask="0x9f" default="0x0d" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth D"/>
+      <register name="AMPLITUDEGAIN2" addr="0x414b" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0x46" readsafe="1" mappedtox="0" description="Amplitude Estimator Bandwidth"/>
+      <register name="FREQDEV02" addr="0x414d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x20" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 0"/>
+      <register name="FREQDEV12" addr="0x414c" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 1"/>
+      <register name="FOURFSK2" addr="0x414e" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x1a" readsafe="1" mappedtox="0" description="Four FSK Control"/>
+      <register name="BBOFFSRES2" addr="0x414f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Baseband Offset Compensation Resistors"/>
+    </reggroup>
+    <reggroup name="Radio Receiver Parameter Set 3">
+      <register name="AGCGAIN3" addr="0x4150" addrspace="xram" readmask="0xff" writemask="0xff" default="0x54" readsafe="1" mappedtox="0" description="AGC Speed"/>
+      <register name="AGCTARGET3" addr="0x4151" addrspace="xram" readmask="0xff" writemask="0xff" default="0x60" readsafe="1" mappedtox="0" description="AGC Target"/>
+      <register name="AGCAHYST3" addr="0x4152" addrspace="xram" readmask="0x07" writemask="0x07" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Hysteresis"/>
+      <register name="AGCMINMAX3" addr="0x4153" addrspace="xram" readmask="0x77" writemask="0x77" default="0x00" readsafe="1" mappedtox="0" description="AGC Analog Update Behaviour"/>
+      <register name="TIMEGAIN3" addr="0x4154" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf5" readsafe="1" mappedtox="0" description="Time Estimator Bandwidth"/>
+      <register name="DRGAIN3" addr="0x4155" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf0" readsafe="1" mappedtox="0" description="Data Rate Estimator Bandwidth"/>
+      <register name="PHASEGAIN3" addr="0x4156" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0xc3" readsafe="1" mappedtox="0" description="Phase Estimator Bandwidth"/>
+      <register name="FREQUENCYGAINA3" addr="0x4157" addrspace="xram" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth A"/>
+      <register name="FREQUENCYGAINB3" addr="0x4158" addrspace="xram" readmask="0xdf" writemask="0xdf" default="0x1f" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth B"/>
+      <register name="FREQUENCYGAINC3" addr="0x4159" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x0d" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth C"/>
+      <register name="FREQUENCYGAIND3" addr="0x415a" addrspace="xram" readmask="0x9f" writemask="0x9f" default="0x0d" readsafe="1" mappedtox="0" description="Frequency Estimator Bandwidth D"/>
+      <register name="AMPLITUDEGAIN3" addr="0x415b" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0x46" readsafe="1" mappedtox="0" description="Amplitude Estimator Bandwidth"/>
+      <register name="FREQDEV03" addr="0x415d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x20" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 0"/>
+      <register name="FREQDEV13" addr="0x415c" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Receiver Frequency Deviation 1"/>
+      <register name="FOURFSK3" addr="0x415e" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x1a" readsafe="1" mappedtox="0" description="Four FSK Control"/>
+      <register name="BBOFFSRES3" addr="0x415f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Baseband Offset Compensation Resistors"/>
+    </reggroup>
+    <reggroup name="Radio Transmitter Parameters">
+      <register name="MODCFGF" addr="0x4160" addrspace="xram" readmask="0x03" writemask="0x03" default="0x00" readsafe="1" mappedtox="0" description="Modulator Configuration F"/>
+      <register name="FSKDEV0" addr="0x4163" addrspace="xram" readmask="0xff" writemask="0xff" default="0x3d" readsafe="1" mappedtox="0" description="FSK Deviation 0"/>
+      <register name="FSKDEV1" addr="0x4162" addrspace="xram" readmask="0xff" writemask="0xff" default="0x0a" readsafe="1" mappedtox="0" description="FSK Deviation 1"/>
+      <register name="FSKDEV2" addr="0x4161" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="FSK Deviation 2"/>
+      <register name="MODCFGA" addr="0x4164" addrspace="xram" readmask="0xf7" writemask="0xf7" default="0x05" readsafe="1" mappedtox="0" description="Modulator Configuration A"/>
+      <register name="TXRATE0" addr="0x4167" addrspace="xram" readmask="0xff" writemask="0xff" default="0xf6" readsafe="1" mappedtox="0" description="Transmitter Bitrate 0"/>
+      <register name="TXRATE1" addr="0x4166" addrspace="xram" readmask="0xff" writemask="0xff" default="0x28" readsafe="1" mappedtox="0" description="Transmitter Bitrate 1"/>
+      <register name="TXRATE2" addr="0x4165" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Bitrate 2"/>
+      <register name="TXPWRCOEFFA0" addr="0x4169" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient A 0"/>
+      <register name="TXPWRCOEFFA1" addr="0x4168" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient A 1"/>
+      <register name="TXPWRCOEFFB0" addr="0x416b" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient B 0"/>
+      <register name="TXPWRCOEFFB1" addr="0x416a" addrspace="xram" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient B 1"/>
+      <register name="TXPWRCOEFFC0" addr="0x416d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient C 0"/>
+      <register name="TXPWRCOEFFC1" addr="0x416c" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient C 1"/>
+      <register name="TXPWRCOEFFD0" addr="0x416f" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient D 0"/>
+      <register name="TXPWRCOEFFD1" addr="0x416e" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient D 1"/>
+      <register name="TXPWRCOEFFE0" addr="0x4171" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient E 0"/>
+      <register name="TXPWRCOEFFE1" addr="0x4170" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Transmitter Predistortion Coefficient E 1"/>
+    </reggroup>
+    <reggroup name="Radio Crystal Oscillator">
+      <register name="XTALAMPL" addr="0x4f11" addrspace="xram" readmask="0x87" writemask="0x87" default="0x80" readsafe="1" mappedtox="0" description="Crystal Oscillator Amplitude Control"/>
+      <register name="XTALCAP" addr="0x4184" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Crystal Oscillator Load Capacitance"/>
+      <register name="XTALOSC" addr="0x4f10" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x04" readsafe="1" mappedtox="0" description="Crystal Oscillator Control"/>
+    </reggroup>
+    <reggroup name="Radio Baseband">
+      <register name="BBTUNE" addr="0x4188" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x09" readsafe="1" mappedtox="0" description="Baseband Tuning"/>
+      <register name="BBOFFSCAP" addr="0x4189" addrspace="xram" readmask="0x77" writemask="0x77" default="0x77" readsafe="1" mappedtox="0" description="Baseband Offset Compensation Capacitors"/>
+    </reggroup>
+    <reggroup name="Radio Packet Format">
+      <register name="PKTADDRCFG" addr="0x4200" addrspace="xram" readmask="0xef" writemask="0xef" default="0x20" readsafe="1" mappedtox="0" description="Packet Address Config"/>
+      <register name="PKTADDR0" addr="0x4207" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address 0"/>
+      <register name="PKTADDR1" addr="0x4206" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address 1"/>
+      <register name="PKTADDR2" addr="0x4205" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address 2"/>
+      <register name="PKTADDR3" addr="0x4204" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address 3"/>
+      <register name="PKTADDRMASK0" addr="0x420b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address Mask 0"/>
+      <register name="PKTADDRMASK1" addr="0x420a" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address Mask 1"/>
+      <register name="PKTADDRMASK2" addr="0x4209" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address Mask 2"/>
+      <register name="PKTADDRMASK3" addr="0x4208" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Address Mask 3"/>
+      <register name="PKTLENCFG" addr="0x4201" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Length Configuration"/>
+      <register name="PKTLENOFFSET" addr="0x4202" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Length Offset"/>
+      <register name="PKTMAXLEN" addr="0x4203" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Packet Maximum Length"/>
+    </reggroup>
+    <reggroup name="Radio Pattern Match">
+      <register name="MATCH0PAT0" addr="0x4213" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 0, Pattern 0"/>
+      <register name="MATCH0PAT1" addr="0x4212" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 0, Pattern 1"/>
+      <register name="MATCH0PAT2" addr="0x4211" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 0, Pattern 2"/>
+      <register name="MATCH0PAT3" addr="0x4210" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 0, Pattern 3"/>
+      <register name="MATCH0LEN" addr="0x4214" addrspace="xram" readmask="0x9f" writemask="0x9f" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 0, Pattern Length"/>
+      <register name="MATCH0MIN" addr="0x4215" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 0, Minimum Match"/>
+      <register name="MATCH0MAX" addr="0x4216" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x1f" readsafe="1" mappedtox="0" description="Pattern Match Unit 0, Maximum Match"/>
+      <register name="MATCH1PAT0" addr="0x4219" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 1, Pattern 0"/>
+      <register name="MATCH1PAT1" addr="0x4218" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 1, Pattern 1"/>
+      <register name="MATCH1LEN" addr="0x421c" addrspace="xram" readmask="0x8f" writemask="0x8f" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 1, Pattern Length"/>
+      <register name="MATCH1MIN" addr="0x421d" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Pattern Match Unit 1, Minimum Match"/>
+      <register name="MATCH1MAX" addr="0x421e" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x0f" readsafe="1" mappedtox="0" description="Pattern Match Unit 1, Maximum Match"/>
+    </reggroup>
+    <reggroup name="Radio Packet Controller">
+      <register name="TMGTXBOOST" addr="0x4220" addrspace="xram" readmask="0xff" writemask="0xff" default="0x32" readsafe="1" mappedtox="0" description="Transmit PLL Boost Time"/>
+      <register name="TMGTXSETTLE" addr="0x4221" addrspace="xram" readmask="0xff" writemask="0xff" default="0x0a" readsafe="1" mappedtox="0" description="Transmit PLL (post Boost) Settling Time"/>
+      <register name="TMGRXBOOST" addr="0x4223" addrspace="xram" readmask="0xff" writemask="0xff" default="0x32" readsafe="1" mappedtox="0" description="Receive PLL Boost Time"/>
+      <register name="TMGRXSETTLE" addr="0x4224" addrspace="xram" readmask="0xff" writemask="0xff" default="0x14" readsafe="1" mappedtox="0" description="Receive PLL (post Boost) Settling Time"/>
+      <register name="TMGRXOFFSACQ" addr="0x4225" addrspace="xram" readmask="0xff" writemask="0xff" default="0x73" readsafe="1" mappedtox="0" description="Receive Baseband DC Offset Acquisition Time"/>
+      <register name="TMGRXCOARSEAGC" addr="0x4226" addrspace="xram" readmask="0xff" writemask="0xff" default="0x39" readsafe="1" mappedtox="0" description="Receive Coarse AGC Time"/>
+      <register name="TMGRXAGC" addr="0x4227" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Receiver AGC Settling Time"/>
+      <register name="TMGRXRSSI" addr="0x4228" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Receiver RSSI Settling Time"/>
+      <register name="TMGRXPREAMBLE1" addr="0x4229" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Receiver Preamble 1 Timeout"/>
+      <register name="TMGRXPREAMBLE2" addr="0x422a" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Receiver Preamble 2 Timeout"/>
+      <register name="TMGRXPREAMBLE3" addr="0x422b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Receiver Preamble 3 Timeout"/>
+      <register name="RSSIREFERENCE" addr="0x422c" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="RSSI Offset"/>
+      <register name="RSSIABSTHR" addr="0x422d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="RSSI Absolute Threshold"/>
+      <register name="BGNDRSSIGAIN" addr="0x422e" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Background RSSI Averaging Time Constant"/>
+      <register name="BGNDRSSITHR" addr="0x422f" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="Background RSSI Relative Threshold"/>
+      <register name="PKTCHUNKSIZE" addr="0x4230" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Packet Chunk Size"/>
+      <register name="PKTMISCFLAGS" addr="0x4231" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x00" readsafe="1" mappedtox="0" description="Packet Controller Miscellaneous Flags"/>
+      <register name="PKTSTOREFLAGS" addr="0x4232" addrspace="xram" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="0" description="Packet Controller Store Flags"/>
+      <register name="PKTACCEPTFLAGS" addr="0x4233" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="Packet Controller Accept Flags"/>
+    </reggroup>
+    <reggroup name="Radio General Purpose ADC">
+      <register name="GPADCCTRL" addr="0x4300" addrspace="xram" readmask="0xbf" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="General Purpose ADC Control"/>
+      <register name="GPADCPERIOD" addr="0x4301" addrspace="xram" readmask="0xff" writemask="0xff" default="0x3f" readsafe="1" mappedtox="0" description="GPADC Sampling Period"/>
+      <register name="GPADC13VALUE0" addr="0x4309" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="GPADC13 Value 0"/>
+      <register name="GPADC13VALUE1" addr="0x4308" addrspace="xram" readmask="0x03" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="GPADC13 Value 1"/>
+    </reggroup>
+    <reggroup name="Radio Low Power Oscillator Calibration">
+      <register name="LPOSCCONFIG" addr="0x4310" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Calibration Configuration"/>
+      <register name="LPOSCSTATUS" addr="0x4311" addrspace="xram" readmask="0x03" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Calibration Status"/>
+      <register name="LPOSCKFILT0" addr="0x4313" addrspace="xram" readmask="0xff" writemask="0xff" default="0xc4" readsafe="1" mappedtox="0" description="Low Power Oscillator Calibration Filter Constant Low Byte"/>
+      <register name="LPOSCKFILT1" addr="0x4312" addrspace="xram" readmask="0xff" writemask="0xff" default="0x20" readsafe="1" mappedtox="0" description="Low Power Oscillator Calibration Filter Constant High Byte"/>
+      <register name="LPOSCREF0" addr="0x4315" addrspace="xram" readmask="0xff" writemask="0xff" default="0xa8" readsafe="1" mappedtox="0" description="Low Power Oscillator Reference Frequency Low Byte"/>
+      <register name="LPOSCREF1" addr="0x4314" addrspace="xram" readmask="0xff" writemask="0xff" default="0x61" readsafe="1" mappedtox="0" description="Low Power Oscillator Reference Frequency High Byte"/>
+      <register name="LPOSCFREQ0" addr="0x4317" addrspace="xram" readmask="0xf0" writemask="0xf0" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Frequency Tuning Low Byte"/>
+      <register name="LPOSCFREQ1" addr="0x4316" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Frequency Tuning High Byte"/>
+      <register name="LPOSCPER0" addr="0x4319" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Period Low Byte"/>
+      <register name="LPOSCPER1" addr="0x4318" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Period High Byte"/>
+    </reggroup>
+    <reggroup name="Radio DAC">
+      <register name="DACVALUE0" addr="0x4331" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="DAC Value 0"/>
+      <register name="DACVALUE1" addr="0x4330" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="DAC Value 1"/>
+      <register name="DACCONFIG" addr="0x4332" addrspace="xram" readmask="0xcf" writemask="0xcf" default="0x00" readsafe="1" mappedtox="0" description="DAC Configuration"/>
+    </reggroup>
+  </registers>
+</axchip>

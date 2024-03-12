@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<axchip>
+  <chip name="AX8052" hide="0"/>
+  <autodetect>
+    <compare addr="0x7f00" addrspace="xram" value="0x8e" mask="0xfe"/>
+    <save addr="0x7084" addrspace="xram"/>
+    <save addr="0x7085" addrspace="xram"/>
+    <write addr="0x7084" addrspace="xram" value="0x55" mask="0xff"/>
+    <write addr="0x7085" addrspace="xram" value="0xaa" mask="0xff"/>
+    <compare addr="0x7084" addrspace="xram" value="0x55" mask="0xff"/>
+    <compare addr="0x7085" addrspace="xram" value="0xaa" mask="0xff"/>
+    <write addr="0x7084" addrspace="xram" value="0xaa" mask="0xff"/>
+    <write addr="0x7085" addrspace="xram" value="0x55" mask="0xff"/>
+    <compare addr="0x7084" addrspace="xram" value="0xaa" mask="0xff"/>
+    <compare addr="0x7085" addrspace="xram" value="0x55" mask="0xff"/>
+  </autodetect>
+  <registers>
+    <reggroup name="Register Bank 0">
+      <register name="R0" addr="0x00" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R0 B0"/>
+      <register name="R1" addr="0x01" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R1 B0"/>
+      <register name="R2" addr="0x02" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R2 B0"/>
+      <register name="R3" addr="0x03" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R3 B0"/>
+      <register name="R4" addr="0x04" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R4 B0"/>
+      <register name="R5" addr="0x05" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R5 B0"/>
+      <register name="R6" addr="0x06" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R6 B0"/>
+      <register name="R7" addr="0x07" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R7 B0"/>
+    </reggroup>
+    <reggroup name="Register Bank 1">
+      <register name="R0" addr="0x08" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R0 B1"/>
+      <register name="R1" addr="0x09" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R1 B1"/>
+      <register name="R2" addr="0x0a" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R2 B1"/>
+      <register name="R3" addr="0x0b" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R3 B1"/>
+      <register name="R4" addr="0x0c" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R4 B1"/>
+      <register name="R5" addr="0x0d" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R5 B1"/>
+      <register name="R6" addr="0x0e" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R6 B1"/>
+      <register name="R7" addr="0x0f" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R7 B1"/>
+    </reggroup>
+    <reggroup name="Register Bank 2">
+      <register name="R0" addr="0x10" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R0 B2"/>
+      <register name="R1" addr="0x11" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R1 B2"/>
+      <register name="R2" addr="0x12" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R2 B2"/>
+      <register name="R3" addr="0x13" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R3 B2"/>
+      <register name="R4" addr="0x14" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R4 B2"/>
+      <register name="R5" addr="0x15" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R5 B2"/>
+      <register name="R6" addr="0x16" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R6 B2"/>
+      <register name="R7" addr="0x17" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R7 B2"/>
+    </reggroup>
+    <reggroup name="Register Bank 3">
+      <register name="R0" addr="0x18" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R0 B3"/>
+      <register name="R1" addr="0x19" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R1 B3"/>
+      <register name="R2" addr="0x1a" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R2 B3"/>
+      <register name="R3" addr="0x1b" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R3 B3"/>
+      <register name="R4" addr="0x1c" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R4 B3"/>
+      <register name="R5" addr="0x1d" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R5 B3"/>
+      <register name="R6" addr="0x1e" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R6 B3"/>
+      <register name="R7" addr="0x1f" addrspace="iramlow" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="R7 B3"/>
+    </reggroup>
+    <reggroup name="Core">
+      <register name="ACC" addr="0xe0" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Accumulator"/>
+      <register name="B" addr="0xf0" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="B Register"/>
+      <register name="PSW" addr="0xd0" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Program Status Word"/>
+      <register name="SP" addr="0x81" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x07" readsafe="1" mappedtox="0" description="Stack Pointer"/>
+      <register name="XPAGE" addr="0xd9" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Memory Page Select"/>
+      <register name="PCON" addr="0x87" addrspace="sfr" readmask="0xff" writemask="0x0f" default="0x00" readsafe="1" mappedtox="1" description="Power Mode Control"/>
+      <register name="CLKCON" addr="0xc6" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x08" readsafe="1" mappedtox="1" description="Clock Control"/>
+      <register name="CLKSTAT" addr="0xc7" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Clock Status"/>
+      <register name="OSCCALIB" addr="0x7053" addrspace="xram" readmask="0xff" writemask="0x07" default="0x04" readsafe="0" mappedtox="0" description="Oscillator Calibration Interrupt / Status"/>
+      <register name="OSCFORCERUN" addr="0x7050" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Oscillator Run Force"/>
+      <register name="OSCREADY" addr="0x7052" addrspace="xram" readmask="0x0f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Oscillator Ready Status"/>
+      <register name="OSCRUN" addr="0x7051" addrspace="xram" readmask="0x0f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Oscillator Run Status"/>
+      <register name="LPXOSCGM" addr="0x7054" addrspace="xram" readmask="0x9f" writemask="0x9f" default="0x08" readsafe="1" mappedtox="0" description="Low Power Crystal Oscillator Transconductance"/>
+      <register name="XTALAMPL" addr="0x7f19" addrspace="xram" readmask="0x87" writemask="0x87" default="0x80" readsafe="1" mappedtox="0" description="Crystal Oscillator Amplitude Control"/>
+      <register name="XTALOSC" addr="0x7f18" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x04" readsafe="1" mappedtox="0" description="Crystal Oscillator Configuration"/>
+      <register name="XTALREADY" addr="0x7f1a" addrspace="xram" readmask="0xcf" writemask="0x0f" default="0x01" readsafe="1" mappedtox="0" description="Crystal Oscillator Ready Mode"/>
+      <register name="MISCCTRL" addr="0x7f01" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Miscellaneous Control"/>
+    </reggroup>
+    <reggroup name="Data Pointer">
+      <register name="DPH" addr="0x83" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Data Pointer 0 High Byte"/>
+      <register name="DPH1" addr="0x85" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Data Pointer 1 High Byte"/>
+      <register name="DPL" addr="0x82" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Data Pointer 0 Low Byte"/>
+      <register name="DPL1" addr="0x84" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Data Pointer 1 Low Byte"/>
+      <register name="DPS" addr="0x86" addrspace="sfr" readmask="0x01" writemask="0x01" default="0x00" readsafe="1" mappedtox="0" description="Data Pointer Select"/>
+    </reggroup>
+    <reggroup name="Interrupt">
+      <register name="IE" addr="0xa8" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Interrupt Enable"/>
+      <register name="EIE" addr="0x98" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Extended Interrupt Enable"/>
+      <register name="E2IE" addr="0xa0" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="2nd Extended Interrupt Enable"/>
+      <register name="IP" addr="0xb8" addrspace="sfr" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="1" description="Interrupt Priority"/>
+      <register name="EIP" addr="0xb0" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Extended Interrupt Priority"/>
+      <register name="E2IP" addr="0xc0" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="2nd Extended Interrupt Priority"/>
+    </reggroup>
+    <reggroup name="FLASH">
+      <register name="NVADDR0" addr="0x92" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Non-Volatile Memory Address Low Byte"/>
+      <register name="NVADDR1" addr="0x93" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Non-Volatile Memory Address High Byte"/>
+      <register name="NVDATA0" addr="0x94" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Non-Volatile Memory Data Low Byte"/>
+      <register name="NVDATA1" addr="0x95" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Non-Volatile Memory Data High Byte"/>
+      <register name="NVKEY" addr="0x96" addrspace="sfr" readmask="0x00" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Non-Volatile Memory Write/Erase Key"/>
+      <register name="NVSTATUS" addr="0x91" addrspace="sfr" readmask="0x03" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Non-Volatile Memory Command / Status"/>
+      <register name="CODECONFIG" addr="0x97" addrspace="sfr" readmask="0xef" writemask="0xff" default="0xc7" readsafe="1" mappedtox="1" description="Code Space Configuration"/>
+    </reggroup>
+    <reggroup name="GPIO">
+      <register name="DIRA" addr="0x89" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Port A Sfrion"/>
+      <register name="DIRB" addr="0x8a" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Port B Sfrion"/>
+      <register name="DIRC" addr="0x8b" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Port C Sfrion"/>
+      <register name="PORTA" addr="0x80" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Port A Output"/>
+      <register name="PORTB" addr="0x88" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Port B Output"/>
+      <register name="PORTC" addr="0x90" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Port C Output"/>
+      <register name="PINA" addr="0xc8" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Port A Input"/>
+      <register name="PINB" addr="0xe8" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Port B Input"/>
+      <register name="PINC" addr="0xf8" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Port C Input"/>
+      <register name="PINCHGA" addr="0x7004" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Port A Level Change"/>
+      <register name="PINCHGB" addr="0x7005" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Port B Level Change"/>
+      <register name="PINCHGC" addr="0x7006" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Port C Level Change"/>
+      <register name="ANALOGA" addr="0x7007" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Port A Analog Mode"/>
+      <register name="INTCHGA" addr="0x7000" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Port A Interrupt on Change"/>
+      <register name="INTCHGB" addr="0x7001" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Port B Interrupt on Change"/>
+      <register name="INTCHGC" addr="0x7002" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Port C Interrupt on Change"/>
+      <register name="PALTA" addr="0x7008" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Port A Alternate Function"/>
+      <register name="PALTB" addr="0x7009" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="Port B Alternate Function"/>
+      <register name="PALTC" addr="0x700a" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x00" readsafe="1" mappedtox="0" description="Port C Alternate Function"/>
+      <register name="PINSEL" addr="0x700b" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Port Input Selection"/>
+      <register name="EXTIRQ" addr="0x7003" addrspace="xram" readmask="0x77" writemask="0x77" default="0x00" readsafe="1" mappedtox="0" description="External IRQ Configuration"/>
+      <register name="GPIOENABLE" addr="0x700c" addrspace="xram" readmask="0x01" writemask="0x01" default="0x01" readsafe="1" mappedtox="0" description="GPIO Port Enable"/>
+    </reggroup>
+    <reggroup name="ADC">
+      <register name="ADCCH0CONFIG" addr="0xca" addrspace="sfr" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="1" description="ADC Channel 0 Configuration"/>
+      <register name="ADCCH1CONFIG" addr="0xcb" addrspace="sfr" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="1" description="ADC Channel 1 Configuration"/>
+      <register name="ADCCH2CONFIG" addr="0xd2" addrspace="sfr" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="1" description="ADC Channel 2 Configuration"/>
+      <register name="ADCCH3CONFIG" addr="0xd3" addrspace="sfr" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="1" description="ADC Channel 3 Configuration"/>
+      <register name="ADCCLKSRC" addr="0xd1" addrspace="sfr" readmask="0xff" writemask="0x7f" default="0x07" readsafe="1" mappedtox="1" description="ADC Clock Source"/>
+      <register name="ADCCONV" addr="0xc9" addrspace="sfr" readmask="0xe3" writemask="0x03" default="0x00" readsafe="0" mappedtox="1" description="ADC Conversion Source"/>
+      <register name="ADCCH0VAL0" addr="0x7020" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 0 Low Byte"/>
+      <register name="ADCCH0VAL1" addr="0x7021" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 0 High Byte"/>
+      <register name="ADCCH1VAL0" addr="0x7022" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 1 Low Byte"/>
+      <register name="ADCCH1VAL1" addr="0x7023" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 1 High Byte"/>
+      <register name="ADCCH2VAL0" addr="0x7024" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 2 Low Byte"/>
+      <register name="ADCCH2VAL1" addr="0x7025" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 2 High Byte"/>
+      <register name="ADCCH3VAL0" addr="0x7026" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 3 Low Byte"/>
+      <register name="ADCCH3VAL1" addr="0x7027" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="ADC Channel 3 High Byte"/>
+      <register name="ADCTUNE0" addr="0x7028" addrspace="xram" readmask="0xff" writemask="0xff" default="0x01" readsafe="1" mappedtox="0" description="ADC Tuning 0"/>
+      <register name="ADCTUNE1" addr="0x7029" addrspace="xram" readmask="0xff" writemask="0xff" default="0x02" readsafe="1" mappedtox="0" description="ADC Tuning 1"/>
+      <register name="ADCTUNE2" addr="0x702a" addrspace="xram" readmask="0xff" writemask="0xff" default="0xe8" readsafe="1" mappedtox="0" description="ADC Tuning 2"/>
+      <register name="ANALOGCOMP" addr="0xe1" addrspace="sfr" readmask="0xff" writemask="0x3f" default="0x00" readsafe="1" mappedtox="1" description="Analog Comparators"/>
+    </reggroup>
+    <reggroup name="DebugLink">
+      <register name="DBGLNKBUF" addr="0xe3" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="0" mappedtox="1" description="Debug Link Buffer"/>
+      <register name="DBGLNKSTAT" addr="0xe2" addrspace="sfr" readmask="0xff" writemask="0xe0" default="0x00" readsafe="0" mappedtox="1" description="Debug Link Status"/>
+    </reggroup>
+    <reggroup name="Input Capture 0">
+      <register name="IC0CAPT0" addr="0xce" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Input Capture 0 Low Byte"/>
+      <register name="IC0CAPT1" addr="0xcf" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Input Capture 0 High Byte"/>
+      <register name="IC0MODE" addr="0xcc" addrspace="sfr" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="1" description="Input Capture 0 Mode"/>
+      <register name="IC0STATUS" addr="0xcd" addrspace="sfr" readmask="0xf7" writemask="0xf0" default="0x06" readsafe="0" mappedtox="1" description="Input Capture 0 Status"/>
+    </reggroup>
+    <reggroup name="Input Capture 1">
+      <register name="IC1CAPT0" addr="0xd6" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Input Capture 1 Low Byte"/>
+      <register name="IC1CAPT1" addr="0xd7" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Input Capture 1 High Byte"/>
+      <register name="IC1MODE" addr="0xd4" addrspace="sfr" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="1" description="Input Capture 1 Mode"/>
+      <register name="IC1STATUS" addr="0xd5" addrspace="sfr" readmask="0xf7" writemask="0xf0" default="0x06" readsafe="0" mappedtox="1" description="Input Capture 1 Status"/>
+    </reggroup>
+    <reggroup name="Output Compare 0">
+      <register name="OC0COMP0" addr="0xbc" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 0 Low Byte"/>
+      <register name="OC0COMP1" addr="0xbd" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 0 High Byte"/>
+      <register name="OC0MODE" addr="0xb9" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 0 Mode"/>
+      <register name="OC0PIN" addr="0xba" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 0 Pin Configuration"/>
+      <register name="OC0STATUS" addr="0xbb" addrspace="sfr" readmask="0xff" writemask="0xc0" default="0x00" readsafe="0" mappedtox="1" description="Output Compare 0 Status"/>
+    </reggroup>
+    <reggroup name="Output Compare 1">
+      <register name="OC1COMP0" addr="0xc4" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 1 Low Byte"/>
+      <register name="OC1COMP1" addr="0xc5" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 1 High Byte"/>
+      <register name="OC1MODE" addr="0xc1" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 1 Mode"/>
+      <register name="OC1PIN" addr="0xc2" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Output Compare 1 Pin Configuration"/>
+      <register name="OC1STATUS" addr="0xc3" addrspace="sfr" readmask="0xff" writemask="0xc0" default="0x00" readsafe="0" mappedtox="1" description="Output Compare 1 Status"/>
+    </reggroup>
+    <reggroup name="Radio Controller">
+      <register name="RADIOACC" addr="0xb1" addrspace="sfr" readmask="0xcf" writemask="0x0f" default="0x00" readsafe="1" mappedtox="1" description="Radio Controller Access Mode"/>
+      <register name="RADIOADDR0" addr="0xb3" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Radio Register Address Low Byte"/>
+      <register name="RADIOADDR1" addr="0xb2" addrspace="sfr" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="1" description="Radio Register Address High Byte"/>
+      <register name="RADIODATA0" addr="0xb7" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Radio Register Data 0"/>
+      <register name="RADIODATA1" addr="0xb6" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Radio Register Data 1"/>
+      <register name="RADIODATA2" addr="0xb5" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Radio Register Data 2"/>
+      <register name="RADIODATA3" addr="0xb4" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Radio Register Data 3"/>
+      <register name="RADIOSTAT0" addr="0xbe" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="1" description="Radio Access Status Low Byte"/>
+      <register name="RADIOSTAT1" addr="0xbf" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="1" description="Radio Access Status High Byte"/>
+      <register name="RADIOFDATAADDR0" addr="0x7040" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Radio FIFO Data Register Address Low Byte"/>
+      <register name="RADIOFDATAADDR1" addr="0x7041" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Radio FIFO Data Register Address High Byte"/>
+      <register name="RADIOFSTATADDR0" addr="0x7042" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Radio FIFO Status Register Address Low Byte"/>
+      <register name="RADIOFSTATADDR1" addr="0x7043" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x00" readsafe="1" mappedtox="0" description="Radio FIFO Status Register Address High Byte"/>
+      <register name="RADIOMUX" addr="0x7044" addrspace="xram" readmask="0x7f" writemask="0x7f" default="0x03" readsafe="1" mappedtox="0" description="Radio Multiplexer Control"/>
+    </reggroup>
+    <reggroup name="SPI Controller">
+      <register name="SPCLKSRC" addr="0xdf" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x07" readsafe="1" mappedtox="1" description="SPI Clock Source"/>
+      <register name="SPMODE" addr="0xdc" addrspace="sfr" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="1" description="SPI Mode"/>
+      <register name="SPSHREG" addr="0xde" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="0" mappedtox="1" description="SPI Shift Register"/>
+      <register name="SPSTATUS" addr="0xdd" addrspace="sfr" readmask="0x7f" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="SPI Status"/>
+    </reggroup>
+    <reggroup name="Timer 0">
+      <register name="T0CNT0" addr="0x9c" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 0 Count Low Byte"/>
+      <register name="T0CNT1" addr="0x9d" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 0 Count High Byte"/>
+      <register name="T0PERIOD0" addr="0x9e" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 0 Period Low Byte"/>
+      <register name="T0PERIOD1" addr="0x9f" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 0 Period High Byte"/>
+      <register name="T0CLKSRC" addr="0x9a" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="1" description="Timer 0 Clock Source"/>
+      <register name="T0MODE" addr="0x99" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 0 Mode"/>
+      <register name="T0STATUS" addr="0x9b" addrspace="sfr" readmask="0xff" writemask="0xc0" default="0x00" readsafe="0" mappedtox="1" description="Timer 0 Status"/>
+    </reggroup>
+    <reggroup name="Timer 1">
+      <register name="T1CNT0" addr="0xa4" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 1 Count Low Byte"/>
+      <register name="T1CNT1" addr="0xa5" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 1 Count High Byte"/>
+      <register name="T1PERIOD0" addr="0xa6" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 1 Period Low Byte"/>
+      <register name="T1PERIOD1" addr="0xa7" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 1 Period High Byte"/>
+      <register name="T1CLKSRC" addr="0xa2" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="1" description="Timer 1 Clock Source"/>
+      <register name="T1MODE" addr="0xa1" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 1 Mode"/>
+      <register name="T1STATUS" addr="0xa3" addrspace="sfr" readmask="0xff" writemask="0xc0" default="0x00" readsafe="0" mappedtox="1" description="Timer 1 Status"/>
+    </reggroup>
+    <reggroup name="Timer 2">
+      <register name="T2CNT0" addr="0xac" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 2 Count Low Byte"/>
+      <register name="T2CNT1" addr="0xad" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 2 Count High Byte"/>
+      <register name="T2PERIOD0" addr="0xae" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 2 Period Low Byte"/>
+      <register name="T2PERIOD1" addr="0xaf" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 2 Period High Byte"/>
+      <register name="T2CLKSRC" addr="0xaa" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x0f" readsafe="1" mappedtox="1" description="Timer 2 Clock Source"/>
+      <register name="T2MODE" addr="0xa9" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Timer 2 Mode"/>
+      <register name="T2STATUS" addr="0xab" addrspace="sfr" readmask="0xff" writemask="0xc0" default="0x00" readsafe="0" mappedtox="1" description="Timer 2 Status"/>
+    </reggroup>
+    <reggroup name="UART 0">
+      <register name="U0CTRL" addr="0xe4" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="UART 0 Control"/>
+      <register name="U0MODE" addr="0xe7" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="UART 0 Mode"/>
+      <register name="U0SHREG" addr="0xe6" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="0" mappedtox="1" description="UART 0 Shift Register"/>
+      <register name="U0STATUS" addr="0xe5" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="UART 0 Status"/>
+    </reggroup>
+    <reggroup name="UART 1">
+      <register name="U1CTRL" addr="0xec" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="UART 1 Control"/>
+      <register name="U1MODE" addr="0xef" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="UART 1 Mode"/>
+      <register name="U1SHREG" addr="0xee" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="0" mappedtox="1" description="UART 1 Shift Register"/>
+      <register name="U1STATUS" addr="0xed" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="UART 1 Status"/>
+    </reggroup>
+    <reggroup name="Watchdog">
+      <register name="WDTCFG" addr="0xda" addrspace="sfr" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="1" description="Watchdog Configuration"/>
+      <register name="WDTRESET" addr="0xdb" addrspace="sfr" readmask="0x00" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Watchdog Reset"/>
+    </reggroup>
+    <reggroup name="Wakeup Timer">
+      <register name="WTCFGA" addr="0xf1" addrspace="sfr" readmask="0x3f" writemask="0x3f" default="0x0f" readsafe="1" mappedtox="1" description="Wakeup Timer A Configuration"/>
+      <register name="WTCFGB" addr="0xf9" addrspace="sfr" readmask="0x3f" writemask="0x3f" default="0x0f" readsafe="1" mappedtox="1" description="Wakeup Timer B Configuration"/>
+      <register name="WTCNTA0" addr="0xf2" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Wakeup Counter A Low Byte"/>
+      <register name="WTCNTA1" addr="0xf3" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Counter A High Byte"/>
+      <register name="WTCNTB0" addr="0xfa" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Wakeup Counter B Low Byte"/>
+      <register name="WTCNTB1" addr="0xfb" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Counter B High Byte"/>
+      <register name="WTCNTR1" addr="0xeb" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Counter High Byte Latch"/>
+      <register name="WTEVTA0" addr="0xf4" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event A Low Byte"/>
+      <register name="WTEVTA1" addr="0xf5" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event A High Byte"/>
+      <register name="WTEVTB0" addr="0xf6" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event B Low Byte"/>
+      <register name="WTEVTB1" addr="0xf7" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event B High Byte"/>
+      <register name="WTEVTC0" addr="0xfc" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event C Low Byte"/>
+      <register name="WTEVTC1" addr="0xfd" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event C High Byte"/>
+      <register name="WTEVTD0" addr="0xfe" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event D Low Byte"/>
+      <register name="WTEVTD1" addr="0xff" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Event D High Byte"/>
+      <register name="WTIRQEN" addr="0xe9" addrspace="sfr" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="1" description="Wakeup Timer Interrupt Enable"/>
+      <register name="WTSTAT" addr="0xea" addrspace="sfr" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="1" description="Wakeup Timer Status"/>
+    </reggroup>
+    <reggroup name="AES">
+      <register name="AESCONFIG" addr="0x7091" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Configuration"/>
+      <register name="AESMODE" addr="0x7090" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Mode"/>
+      <register name="AESINADDR0" addr="0x7094" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Input Address Low Byte"/>
+      <register name="AESINADDR1" addr="0x7095" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Input Address High Byte"/>
+      <register name="AESKEYADDR0" addr="0x7092" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Keystream Address Low Byte"/>
+      <register name="AESKEYADDR1" addr="0x7093" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Keystream Address High Byte"/>
+      <register name="AESOUTADDR0" addr="0x7096" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Output Address Low Byte"/>
+      <register name="AESOUTADDR1" addr="0x7097" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="AES Output Address High Byte"/>
+      <register name="AESCURBLOCK" addr="0x7098" addrspace="xram" readmask="0xbf" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="AES Current Block Number"/>
+    </reggroup>
+    <reggroup name="DMA">
+      <register name="DMA0ADDR0" addr="0x7010" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="DMA Channel 0 Address Low Byte"/>
+      <register name="DMA0ADDR1" addr="0x7011" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="DMA Channel 0 Address High Byte"/>
+      <register name="DMA0CONFIG" addr="0x7014" addrspace="xram" readmask="0xdf" writemask="0xdf" default="0x00" readsafe="1" mappedtox="0" description="DMA Channel 0 Configuration"/>
+      <register name="DMA1ADDR0" addr="0x7012" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="DMA Channel 1 Address Low Byte"/>
+      <register name="DMA1ADDR1" addr="0x7013" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="DMA Channel 1 Address High Byte"/>
+      <register name="DMA1CONFIG" addr="0x7015" addrspace="xram" readmask="0xdf" writemask="0xdf" default="0x00" readsafe="1" mappedtox="0" description="DMA Channel 1 Configuration"/>
+    </reggroup>
+    <reggroup name="Fast RC Oscillator Calibration">
+      <register name="FRCOSCCONFIG" addr="0x7070" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Fast RC Oscillator Calibration Configuration"/>
+      <register name="FRCOSCCTRL" addr="0x7071" addrspace="xram" readmask="0x07" writemask="0x07" default="0x00" readsafe="1" mappedtox="0" description="Fast RC Oscillator Control"/>
+      <register name="FRCOSCKFILT0" addr="0x7072" addrspace="xram" readmask="0xff" writemask="0xff" default="0xc4" readsafe="1" mappedtox="0" description="Fast RC Oscillator Calibration Filter Constant Low Byte"/>
+      <register name="FRCOSCKFILT1" addr="0x7073" addrspace="xram" readmask="0xff" writemask="0xff" default="0x20" readsafe="1" mappedtox="0" description="Fast RC Oscillator Calibration Filter Constant High Byte"/>
+      <register name="FRCOSCREF0" addr="0x7074" addrspace="xram" readmask="0xff" writemask="0xff" default="0xa8" readsafe="1" mappedtox="0" description="Fast RC Oscillator Reference Frequency Low Byte"/>
+      <register name="FRCOSCREF1" addr="0x7075" addrspace="xram" readmask="0xff" writemask="0xff" default="0x61" readsafe="1" mappedtox="0" description="Fast RC Oscillator Reference Frequency High Byte"/>
+      <register name="FRCOSCFREQ0" addr="0x7076" addrspace="xram" readmask="0xf0" writemask="0xf0" default="0x00" readsafe="1" mappedtox="0" description="Fast RC Oscillator Frequency Tuning Low Byte"/>
+      <register name="FRCOSCFREQ1" addr="0x7077" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Fast RC Oscillator Frequency Tuning High Byte"/>
+      <register name="FRCOSCPER0" addr="0x7078" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Fast RC Oscillator Period Low Byte"/>
+      <register name="FRCOSCPER1" addr="0x7079" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Fast RC Oscillator Period High Byte"/>
+    </reggroup>
+    <reggroup name="Low Power Oscillator Calibration">
+      <register name="LPOSCCONFIG" addr="0x7060" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Calibration Configuration"/>
+      <register name="LPOSCKFILT0" addr="0x7062" addrspace="xram" readmask="0xff" writemask="0xff" default="0xc4" readsafe="1" mappedtox="0" description="Low Power Oscillator Calibration Filter Constant Low Byte"/>
+      <register name="LPOSCKFILT1" addr="0x7063" addrspace="xram" readmask="0xff" writemask="0xff" default="0x20" readsafe="1" mappedtox="0" description="Low Power Oscillator Calibration Filter Constant High Byte"/>
+      <register name="LPOSCREF0" addr="0x7064" addrspace="xram" readmask="0xff" writemask="0xff" default="0xa8" readsafe="1" mappedtox="0" description="Low Power Oscillator Reference Frequency Low Byte"/>
+      <register name="LPOSCREF1" addr="0x7065" addrspace="xram" readmask="0xff" writemask="0xff" default="0x61" readsafe="1" mappedtox="0" description="Low Power Oscillator Reference Frequency High Byte"/>
+      <register name="LPOSCFREQ0" addr="0x7066" addrspace="xram" readmask="0xf0" writemask="0xf0" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Frequency Tuning Low Byte"/>
+      <register name="LPOSCFREQ1" addr="0x7067" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Frequency Tuning High Byte"/>
+      <register name="LPOSCPER0" addr="0x7068" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Period Low Byte"/>
+      <register name="LPOSCPER1" addr="0x7069" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Low Power Oscillator Period High Byte"/>
+    </reggroup>
+    <reggroup name="Low Power Oscillator Calibration">
+      <register name="RNGCLKSRC0" addr="0x7082" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x0f" readsafe="1" mappedtox="0" description="True Random Number Generator Clock Source 0"/>
+      <register name="RNGCLKSRC1" addr="0x7083" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x07" readsafe="1" mappedtox="0" description="True Random Number Generator Clock Source 1"/>
+      <register name="RNGMODE" addr="0x7080" addrspace="xram" readmask="0x8f" writemask="0x0f" default="0x0e" readsafe="0" mappedtox="0" description="True Random Number Generator Mode"/>
+      <register name="RNGBYTE" addr="0x7081" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="0" mappedtox="0" description="True Random Byte"/>
+    </reggroup>
+    <reggroup name="Miscellaneous">
+      <register name="SCRATCH0" addr="0x7084" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Scratch Register 0"/>
+      <register name="SCRATCH1" addr="0x7085" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Scratch Register 1"/>
+      <register name="SCRATCH2" addr="0x7086" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Scratch Register 2"/>
+      <register name="SCRATCH3" addr="0x7087" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="1" mappedtox="0" description="Scratch Register 3"/>
+      <register name="SILICONREV" addr="0x7f00" addrspace="xram" readmask="0xff" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Silicon Revision"/>
+    </reggroup>
+  </registers>
+</axchip>

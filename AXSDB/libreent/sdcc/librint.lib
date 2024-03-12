@@ -1,0 +1,2073 @@
+<SDCCLIB>
+
+<INDEX>
+     10449
+<MODULE>
+_divsint 9
+.__.ABS.
+A$_divsint$142
+A$_divsint$133
+A$_divsint$124
+A$_divsint$106
+A$_divsint$143
+A$_divsint$134
+A$_divsint$125
+A$_divsint$116
+A$_divsint$107
+A$_divsint$135
+A$_divsint$126
+A$_divsint$117
+A$_divsint$108
+A$_divsint$145
+A$_divsint$136
+A$_divsint$127
+A$_divsint$118
+A$_divsint$109
+A$_divsint$137
+A$_divsint$128
+A$_divsint$119
+A$_divsint$138
+A$_divsint$129
+A$_divsint$139
+F_divsint$_divsint_dummy$0$0
+XF_divsint$_divsint_dummy$0$0
+C$_divsint.c$201$1$2
+C$_divsint.c$132$0$0
+A$_divsint$110
+C$_divsint.c$202$1$2
+A$_divsint$120
+A$_divsint$111
+A$_divsint$121
+A$_divsint$112
+A$_divsint$103
+A$_divsint$140
+A$_divsint$131
+A$_divsint$122
+A$_divsint$113
+A$_divsint$141
+A$_divsint$132
+A$_divsint$123
+A$_divsint$114
+A$_divsint$105
+__divsint
+</MODULE>
+
+<MODULE>
+_divuint 2948
+.__.ABS.
+A$_divuint$140
+A$_divuint$131
+A$_divuint$122
+A$_divuint$104
+A$_divuint$132
+A$_divuint$123
+A$_divuint$114
+A$_divuint$105
+__divuint
+A$_divuint$124
+A$_divuint$115
+A$_divuint$106
+A$_divuint$143
+A$_divuint$134
+A$_divuint$125
+A$_divuint$116
+A$_divuint$107
+A$_divuint$144
+A$_divuint$135
+A$_divuint$126
+A$_divuint$117
+A$_divuint$108
+A$_divuint$136
+A$_divuint$127
+A$_divuint$109
+C$_divuint.c$147$1$2
+A$_divuint$137
+A$_divuint$128
+A$_divuint$119
+C$_divuint.c$148$1$2
+A$_divuint$138
+A$_divuint$129
+A$_divuint$139
+__divint
+C$_divuint.c$51$0$0
+F_divuint$_divuint_dummy$0$0
+XF_divuint$_divuint_dummy$0$0
+A$_divuint$110
+A$_divuint$120
+A$_divuint$111
+A$_divuint$130
+A$_divuint$121
+</MODULE>
+
+<MODULE>
+_modsint 5705
+.__.ABS.
+A$_modsint$136
+A$_modsint$127
+A$_modsint$118
+A$_modsint$109
+A$_modsint$146
+A$_modsint$137
+A$_modsint$128
+A$_modsint$119
+A$_modsint$138
+A$_modsint$129
+A$_modsint$139
+C$_modsint.c$198$1$2
+C$_modsint.c$199$1$2
+F_modsint$_modsint_dummy$0$0
+XF_modsint$_modsint_dummy$0$0
+A$_modsint$110
+A$_modsint$120
+A$_modsint$111
+A$_modsint$130
+A$_modsint$121
+A$_modsint$112
+A$_modsint$140
+A$_modsint$131
+A$_modsint$122
+A$_modsint$113
+A$_modsint$141
+A$_modsint$123
+A$_modsint$114
+A$_modsint$105
+__modsint
+C$_modsint.c$128$0$0
+A$_modsint$142
+A$_modsint$133
+A$_modsint$124
+A$_modsint$115
+A$_modsint$143
+A$_modsint$134
+A$_modsint$125
+A$_modsint$116
+A$_modsint$107
+A$_modsint$144
+A$_modsint$135
+A$_modsint$126
+A$_modsint$108
+</MODULE>
+
+<MODULE>
+_moduint 8617
+.__.ABS.
+A$_moduint$161
+A$_moduint$143
+A$_moduint$134
+A$_moduint$125
+A$_moduint$116
+A$_moduint$107
+A$_moduint$144
+A$_moduint$135
+A$_moduint$126
+A$_moduint$117
+A$_moduint$108
+A$_moduint$163
+A$_moduint$154
+A$_moduint$145
+A$_moduint$127
+A$_moduint$109
+C$_moduint.c$165$1$2
+A$_moduint$155
+A$_moduint$146
+A$_moduint$137
+A$_moduint$128
+A$_moduint$119
+C$_moduint.c$166$1$2
+A$_moduint$156
+A$_moduint$147
+A$_moduint$138
+A$_moduint$129
+A$_moduint$157
+A$_moduint$148
+A$_moduint$139
+A$_moduint$158
+A$_moduint$149
+A$_moduint$159
+C$_moduint.c$50$0$0
+__modint
+F_moduint$_moduint_dummy$0$0
+XF_moduint$_moduint_dummy$0$0
+A$_moduint$110
+A$_moduint$120
+A$_moduint$111
+A$_moduint$130
+A$_moduint$121
+A$_moduint$140
+A$_moduint$131
+A$_moduint$122
+A$_moduint$150
+A$_moduint$141
+A$_moduint$132
+A$_moduint$123
+A$_moduint$114
+__moduint
+A$_moduint$160
+A$_moduint$151
+A$_moduint$124
+A$_moduint$115
+A$_moduint$106
+</MODULE>
+
+<MODULE>
+_mulint 12012
+.__.ABS.
+C$_mulint.c$121$0$0
+A$_mulint$110
+A$_mulint$120
+A$_mulint$111
+A$_mulint$121
+A$_mulint$112
+A$_mulint$122
+A$_mulint$113
+C$_mulint.c$205$1$2
+G$_mulint_dummy$0$0
+A$_mulint$123
+A$_mulint$114
+A$_mulint$105
+C$_mulint.c$206$1$2
+__mulint
+A$_mulint$124
+A$_mulint$115
+A$_mulint$106
+A$_mulint$116
+A$_mulint$107
+A$_mulint$117
+A$_mulint$108
+A$_mulint$118
+A$_mulint$109
+A$_mulint$119
+__mulint_dummy
+XG$_mulint_dummy$0$0
+</MODULE>
+
+<MODULE>
+_divslong 14112
+.__.ABS.
+A$_divslong$110
+A$_divslong$120
+A$_divslong$111
+A$_divslong$130
+A$_divslong$121
+A$_divslong$112
+A$_divslong$140
+A$_divslong$131
+A$_divslong$113
+A$_divslong$104
+A$_divslong$150
+A$_divslong$141
+A$_divslong$132
+A$_divslong$123
+A$_divslong$114
+A$_divslong$105
+__divslong
+A$_divslong$160
+A$_divslong$151
+A$_divslong$142
+A$_divslong$133
+A$_divslong$124
+A$_divslong$115
+A$_divslong$161
+A$_divslong$152
+A$_divslong$143
+A$_divslong$134
+A$_divslong$125
+A$_divslong$116
+A$_divslong$107
+C$_divslong.c$253$1$2
+A$_divslong$162
+A$_divslong$153
+A$_divslong$144
+A$_divslong$135
+A$_divslong$126
+A$_divslong$117
+A$_divslong$108
+C$_divslong.c$254$1$2
+C$_divslong.c$158$0$0
+F_divslong$_divslong_dummy$0$0
+A$_divslong$163
+A$_divslong$154
+A$_divslong$145
+A$_divslong$136
+A$_divslong$127
+A$_divslong$118
+A$_divslong$109
+A$_divslong$164
+A$_divslong$155
+A$_divslong$146
+A$_divslong$137
+A$_divslong$128
+A$_divslong$119
+A$_divslong$165
+A$_divslong$156
+A$_divslong$147
+A$_divslong$138
+A$_divslong$129
+A$_divslong$166
+A$_divslong$157
+A$_divslong$139
+A$_divslong$158
+A$_divslong$149
+A$_divslong$168
+A$_divslong$159
+XF_divslong$_divslong_dummy$0$0
+</MODULE>
+
+<MODULE>
+_modslong 17873
+.__.ABS.
+A$_modslong$120
+A$_modslong$111
+A$_modslong$130
+A$_modslong$121
+A$_modslong$112
+C$_modslong.c$153$0$0
+A$_modslong$140
+A$_modslong$131
+A$_modslong$122
+A$_modslong$113
+A$_modslong$150
+A$_modslong$141
+A$_modslong$132
+A$_modslong$123
+A$_modslong$114
+__modslong
+F_modslong$_modslong_dummy$0$0
+A$_modslong$160
+A$_modslong$151
+A$_modslong$142
+A$_modslong$133
+A$_modslong$124
+A$_modslong$115
+A$_modslong$161
+A$_modslong$143
+A$_modslong$134
+A$_modslong$125
+A$_modslong$116
+C$_modslong.c$253$1$2
+A$_modslong$162
+A$_modslong$153
+A$_modslong$144
+A$_modslong$135
+A$_modslong$117
+A$_modslong$108
+C$_modslong.c$254$1$2
+A$_modslong$163
+A$_modslong$154
+A$_modslong$145
+A$_modslong$136
+A$_modslong$127
+A$_modslong$118
+A$_modslong$109
+A$_modslong$164
+A$_modslong$146
+A$_modslong$137
+A$_modslong$128
+A$_modslong$119
+A$_modslong$165
+A$_modslong$156
+A$_modslong$147
+A$_modslong$138
+A$_modslong$129
+A$_modslong$166
+A$_modslong$157
+A$_modslong$148
+A$_modslong$139
+A$_modslong$167
+A$_modslong$158
+A$_modslong$149
+A$_modslong$159
+A$_modslong$169
+XF_modslong$_modslong_dummy$0$0
+</MODULE>
+
+<MODULE>
+_modulong 21491
+.__.ABS.
+XF_modulong$_modlong_dummy$0$0
+A$_modulong$200
+A$_modulong$110
+A$_modulong$201
+A$_modulong$111
+A$_modulong$202
+A$_modulong$130
+A$_modulong$112
+A$_modulong$203
+A$_modulong$140
+A$_modulong$131
+A$_modulong$113
+A$_modulong$204
+A$_modulong$150
+A$_modulong$141
+A$_modulong$114
+__modulong
+C$_modulong.c$332$1$2
+C$_modulong.c$191$0$0
+A$_modulong$205
+A$_modulong$160
+A$_modulong$151
+A$_modulong$142
+A$_modulong$133
+A$_modulong$124
+A$_modulong$115
+C$_modulong.c$333$1$2
+A$_modulong$161
+A$_modulong$152
+A$_modulong$143
+A$_modulong$134
+A$_modulong$125
+A$_modulong$116
+A$_modulong$207
+A$_modulong$180
+A$_modulong$162
+A$_modulong$153
+A$_modulong$144
+A$_modulong$135
+A$_modulong$126
+A$_modulong$117
+A$_modulong$181
+A$_modulong$172
+A$_modulong$163
+A$_modulong$154
+A$_modulong$145
+A$_modulong$136
+A$_modulong$127
+A$_modulong$118
+A$_modulong$109
+A$_modulong$191
+A$_modulong$182
+A$_modulong$173
+A$_modulong$164
+A$_modulong$155
+A$_modulong$146
+A$_modulong$137
+A$_modulong$128
+A$_modulong$119
+A$_modulong$192
+A$_modulong$183
+A$_modulong$174
+A$_modulong$165
+A$_modulong$156
+A$_modulong$147
+A$_modulong$138
+A$_modulong$129
+A$_modulong$193
+A$_modulong$184
+A$_modulong$175
+A$_modulong$166
+A$_modulong$157
+A$_modulong$148
+A$_modulong$139
+A$_modulong$194
+A$_modulong$185
+A$_modulong$176
+A$_modulong$167
+A$_modulong$158
+A$_modulong$149
+A$_modulong$195
+A$_modulong$186
+A$_modulong$177
+A$_modulong$168
+A$_modulong$159
+A$_modulong$196
+A$_modulong$187
+A$_modulong$178
+A$_modulong$169
+A$_modulong$197
+A$_modulong$188
+A$_modulong$179
+__modlong
+A$_modulong$198
+A$_modulong$199
+F_modulong$_modlong_dummy$0$0
+</MODULE>
+
+<MODULE>
+_divulong 26204
+.__.ABS.
+XF_divulong$_divlong_dummy$0$0
+A$_divulong$111
+A$_divulong$130
+A$_divulong$112
+A$_divulong$140
+A$_divulong$131
+A$_divulong$122
+A$_divulong$113
+A$_divulong$141
+A$_divulong$132
+A$_divulong$123
+A$_divulong$114
+A$_divulong$105
+__divulong
+C$_divulong.c$323$1$2
+A$_divulong$160
+A$_divulong$151
+A$_divulong$142
+A$_divulong$133
+A$_divulong$124
+A$_divulong$115
+A$_divulong$106
+C$_divulong.c$324$1$2
+C$_divulong.c$192$0$0
+A$_divulong$170
+A$_divulong$161
+A$_divulong$152
+A$_divulong$143
+A$_divulong$134
+A$_divulong$125
+A$_divulong$116
+A$_divulong$107
+A$_divulong$180
+A$_divulong$171
+A$_divulong$162
+A$_divulong$153
+A$_divulong$144
+A$_divulong$135
+A$_divulong$126
+A$_divulong$117
+A$_divulong$108
+A$_divulong$190
+A$_divulong$181
+A$_divulong$172
+A$_divulong$163
+A$_divulong$154
+A$_divulong$145
+A$_divulong$136
+A$_divulong$127
+A$_divulong$118
+A$_divulong$191
+A$_divulong$182
+A$_divulong$173
+A$_divulong$164
+A$_divulong$155
+A$_divulong$146
+A$_divulong$128
+A$_divulong$119
+A$_divulong$192
+A$_divulong$183
+A$_divulong$174
+A$_divulong$156
+A$_divulong$147
+A$_divulong$138
+A$_divulong$129
+A$_divulong$193
+A$_divulong$184
+A$_divulong$175
+A$_divulong$166
+A$_divulong$157
+A$_divulong$148
+A$_divulong$139
+A$_divulong$194
+A$_divulong$185
+A$_divulong$176
+A$_divulong$167
+A$_divulong$158
+A$_divulong$149
+A$_divulong$186
+A$_divulong$168
+A$_divulong$159
+A$_divulong$196
+A$_divulong$187
+A$_divulong$178
+A$_divulong$169
+A$_divulong$188
+A$_divulong$179
+__divlong
+A$_divulong$198
+A$_divulong$189
+A$_divulong$199
+F_divulong$_divlong_dummy$0$0
+</MODULE>
+
+<MODULE>
+_mullong 30815
+.__.ABS.
+A$_mullong$190
+A$_mullong$181
+A$_mullong$172
+A$_mullong$163
+A$_mullong$154
+A$_mullong$145
+A$_mullong$136
+A$_mullong$127
+A$_mullong$118
+A$_mullong$191
+A$_mullong$182
+A$_mullong$173
+A$_mullong$164
+A$_mullong$155
+A$_mullong$146
+A$_mullong$137
+A$_mullong$128
+A$_mullong$119
+A$_mullong$192
+A$_mullong$183
+A$_mullong$174
+A$_mullong$165
+A$_mullong$156
+A$_mullong$147
+A$_mullong$138
+A$_mullong$129
+A$_mullong$193
+A$_mullong$184
+A$_mullong$175
+A$_mullong$166
+A$_mullong$157
+A$_mullong$148
+A$_mullong$139
+A$_mullong$194
+A$_mullong$185
+A$_mullong$176
+A$_mullong$167
+A$_mullong$158
+A$_mullong$149
+A$_mullong$195
+A$_mullong$186
+A$_mullong$177
+A$_mullong$168
+A$_mullong$159
+A$_mullong$187
+A$_mullong$178
+A$_mullong$188
+A$_mullong$179
+__mullong_dummy
+A$_mullong$189
+C$_mullong.c$57$0$0
+XG$_mullong_dummy$0$0
+A$_mullong$110
+C$_mullong.c$310$1$2
+A$_mullong$120
+A$_mullong$111
+C$_mullong.c$311$1$2
+A$_mullong$130
+A$_mullong$121
+A$_mullong$112
+A$_mullong$140
+A$_mullong$131
+A$_mullong$122
+A$_mullong$113
+G$_mullong_dummy$0$0
+A$_mullong$150
+A$_mullong$141
+A$_mullong$132
+A$_mullong$114
+__mullong
+A$_mullong$160
+A$_mullong$151
+A$_mullong$142
+A$_mullong$133
+A$_mullong$124
+A$_mullong$170
+A$_mullong$161
+A$_mullong$152
+A$_mullong$134
+A$_mullong$125
+A$_mullong$116
+A$_mullong$180
+A$_mullong$171
+A$_mullong$162
+A$_mullong$153
+A$_mullong$144
+A$_mullong$135
+A$_mullong$126
+A$_mullong$117
+</MODULE>
+
+</INDEX>
+
+<FILES>
+
+<FILE>
+_divsint
+<REL>
+;!FILE librint/_divsint.asm
+XH3
+H 1A areas 2F global symbols
+M _divsint
+O -mmcs51 --model-small
+S __divint Ref000000
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 3D flags 20 addr 0
+S A$_divsint$142 Def000038
+S A$_divsint$133 Def000029
+S A$_divsint$124 Def000021
+S A$_divsint$106 Def000004
+S A$_divsint$143 Def00003A
+S A$_divsint$134 Def00002A
+S A$_divsint$125 Def000022
+S A$_divsint$116 Def000014
+S A$_divsint$107 Def000007
+S A$_divsint$135 Def00002B
+S A$_divsint$126 Def000023
+S A$_divsint$117 Def000016
+S A$_divsint$108 Def000009
+S A$_divsint$145 Def00003C
+S A$_divsint$136 Def00002E
+S A$_divsint$127 Def000024
+S A$_divsint$118 Def000018
+S A$_divsint$109 Def00000A
+S A$_divsint$137 Def000031
+S A$_divsint$128 Def000025
+S A$_divsint$119 Def000019
+S A$_divsint$138 Def000032
+S A$_divsint$129 Def000026
+S A$_divsint$139 Def000033
+S F_divsint$_divsint_dummy$0$0 Def000000
+S XF_divsint$_divsint_dummy$0$0 Def00003D
+S C$_divsint.c$201$1$2 Def000000
+S C$_divsint.c$132$0$0 Def000000
+S A$_divsint$110 Def00000B
+S C$_divsint.c$202$1$2 Def00003D
+S A$_divsint$120 Def00001A
+S A$_divsint$111 Def00000D
+S A$_divsint$121 Def00001D
+S A$_divsint$112 Def00000F
+S A$_divsint$103 Def000000
+S A$_divsint$140 Def000035
+S A$_divsint$131 Def000027
+S A$_divsint$122 Def00001F
+S A$_divsint$113 Def000010
+S A$_divsint$141 Def000037
+S A$_divsint$132 Def000028
+S A$_divsint$123 Def000020
+S A$_divsint$114 Def000012
+S A$_divsint$105 Def000002
+S __divsint Def000000
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 C2 D5 E5 83 30 E7 0D D2 D5 E4 C3 95 82
+R 00 00 00 16
+T 00 00 0D F5 82 E4 95 83 F5 83
+R 00 00 00 16
+T 00 00 14
+R 00 00 00 16
+T 00 00 14 E5 81 24 FE F8 E6 30 E7 0A B2 D5 18 E4
+R 00 00 00 16
+T 00 00 21 C3 96 F6 E4 08 96
+R 00 00 00 16
+T 00 00 27
+R 00 00 00 16
+T 00 00 27 F9 18 E6 F8 12 00 00 30 D5 0B E4 C3 95
+R 00 00 00 16 02 08 00 00
+T 00 00 34 82 F5 82 E4 95 83 F5 83
+R 00 00 00 16
+T 00 00 3C
+R 00 00 00 16
+T 00 00 3C 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_divsint
+F:F_divsint$_divsint_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_divsint$_divsint_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_divuint
+<REL>
+;!FILE librint/_divuint.asm
+XH3
+H 1A areas 2B global symbols
+M _divuint
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 31 flags 20 addr 0
+S A$_divuint$140 Def00002B
+S A$_divuint$131 Def000020
+S A$_divuint$122 Def000015
+S A$_divuint$104 Def000000
+S A$_divuint$132 Def000021
+S A$_divuint$123 Def000017
+S A$_divuint$114 Def00000A
+S A$_divuint$105 Def000002
+S __divuint Def000000
+S A$_divuint$124 Def000018
+S A$_divuint$115 Def00000C
+S A$_divuint$106 Def000004
+S A$_divuint$143 Def00002E
+S A$_divuint$134 Def000022
+S A$_divuint$125 Def00001A
+S A$_divuint$116 Def00000D
+S A$_divuint$107 Def000005
+S A$_divuint$144 Def000030
+S A$_divuint$135 Def000024
+S A$_divuint$126 Def00001B
+S A$_divuint$117 Def00000E
+S A$_divuint$108 Def000006
+S A$_divuint$136 Def000025
+S A$_divuint$127 Def00001C
+S A$_divuint$109 Def000007
+S C$_divuint.c$147$1$2 Def000000
+S A$_divuint$137 Def000026
+S A$_divuint$128 Def00001D
+S A$_divuint$119 Def00000F
+S C$_divuint.c$148$1$2 Def000031
+S A$_divuint$138 Def000028
+S A$_divuint$129 Def00001E
+S A$_divuint$139 Def000029
+S __divint Def00000A
+S C$_divuint.c$51$0$0 Def000000
+S F_divuint$_divuint_dummy$0$0 Def000000
+S XF_divuint$_divuint_dummy$0$0 Def000031
+S A$_divuint$110 Def000008
+S A$_divuint$120 Def000011
+S A$_divuint$111 Def000009
+S A$_divuint$130 Def00001F
+S A$_divuint$121 Def000013
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 E5 81 24 FE F8 E6 F9 18 E6 F8
+R 00 00 00 16
+T 00 00 0A
+R 00 00 00 16
+T 00 00 0A 7A 10 E4 FB FC
+R 00 00 00 16
+T 00 00 0F
+R 00 00 00 16
+T 00 00 0F E5 82 25 E0 F5 82 E5 83 33 F5 83 EB 33
+R 00 00 00 16
+T 00 00 1C FB EC 33 FC EB 98 F5 F0 EC 99 40 06 FC
+R 00 00 00 16
+T 00 00 29 AB F0 43 82 01
+R 00 00 00 16
+T 00 00 2E
+R 00 00 00 16
+T 00 00 2E DA DF 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_divuint
+F:F_divuint$_divuint_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_divuint$_divuint_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_modsint
+<REL>
+;!FILE librint/_modsint.asm
+XH3
+H 1A areas 2E global symbols
+M _modsint
+O -mmcs51 --model-small
+S __modint Ref000000
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 3D flags 20 addr 0
+S A$_modsint$136 Def00002B
+S A$_modsint$127 Def000021
+S A$_modsint$118 Def000014
+S A$_modsint$109 Def000007
+S A$_modsint$146 Def00003C
+S A$_modsint$137 Def00002E
+S A$_modsint$128 Def000022
+S A$_modsint$119 Def000016
+S A$_modsint$138 Def000031
+S A$_modsint$129 Def000023
+S A$_modsint$139 Def000032
+S C$_modsint.c$198$1$2 Def000000
+S C$_modsint.c$199$1$2 Def00003D
+S F_modsint$_modsint_dummy$0$0 Def000000
+S XF_modsint$_modsint_dummy$0$0 Def00003D
+S A$_modsint$110 Def000009
+S A$_modsint$120 Def000018
+S A$_modsint$111 Def00000A
+S A$_modsint$130 Def000024
+S A$_modsint$121 Def000019
+S A$_modsint$112 Def00000B
+S A$_modsint$140 Def000033
+S A$_modsint$131 Def000025
+S A$_modsint$122 Def00001A
+S A$_modsint$113 Def00000D
+S A$_modsint$141 Def000035
+S A$_modsint$123 Def00001D
+S A$_modsint$114 Def00000F
+S A$_modsint$105 Def000000
+S __modsint Def000000
+S C$_modsint.c$128$0$0 Def000000
+S A$_modsint$142 Def000037
+S A$_modsint$133 Def000026
+S A$_modsint$124 Def00001E
+S A$_modsint$115 Def000010
+S A$_modsint$143 Def000038
+S A$_modsint$134 Def000028
+S A$_modsint$125 Def00001F
+S A$_modsint$116 Def000012
+S A$_modsint$107 Def000002
+S A$_modsint$144 Def00003A
+S A$_modsint$135 Def000029
+S A$_modsint$126 Def000020
+S A$_modsint$108 Def000004
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 C2 D5 E5 83 30 E7 0D D2 D5 E4 C3 95 82
+R 00 00 00 16
+T 00 00 0D F5 82 E4 95 83 F5 83
+R 00 00 00 16
+T 00 00 14
+R 00 00 00 16
+T 00 00 14 E5 81 24 FE F8 E6 30 E7 09 18 E4 C3 96
+R 00 00 00 16
+T 00 00 21 F6 E4 08 96 F6
+R 00 00 00 16
+T 00 00 26
+R 00 00 00 16
+T 00 00 26 86 01 18 86 00 12 00 00 30 D5 0B E4 C3
+R 00 00 00 16 02 09 00 00
+T 00 00 33 95 82 F5 82 E4 95 83 F5 83
+R 00 00 00 16
+T 00 00 3C
+R 00 00 00 16
+T 00 00 3C 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_modsint
+F:F_modsint$_modsint_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_modsint$_modsint_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_moduint
+<REL>
+;!FILE librint/_moduint.asm
+XH3
+H 1A areas 39 global symbols
+M _moduint
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 45 flags 20 addr 0
+S A$_moduint$161 Def000042
+S A$_moduint$143 Def00002B
+S A$_moduint$134 Def000024
+S A$_moduint$125 Def000018
+S A$_moduint$116 Def00000C
+S A$_moduint$107 Def000002
+S A$_moduint$144 Def00002C
+S A$_moduint$135 Def000025
+S A$_moduint$126 Def000019
+S A$_moduint$117 Def00000E
+S A$_moduint$108 Def000004
+S A$_moduint$163 Def000044
+S A$_moduint$154 Def00003B
+S A$_moduint$145 Def00002E
+S A$_moduint$127 Def00001B
+S A$_moduint$109 Def000005
+S C$_moduint.c$165$1$2 Def000000
+S A$_moduint$155 Def00003C
+S A$_moduint$146 Def00002F
+S A$_moduint$137 Def000026
+S A$_moduint$128 Def00001C
+S A$_moduint$119 Def000010
+S C$_moduint.c$166$1$2 Def000045
+S A$_moduint$156 Def00003D
+S A$_moduint$147 Def000031
+S A$_moduint$138 Def000027
+S A$_moduint$129 Def00001E
+S A$_moduint$157 Def00003E
+S A$_moduint$148 Def000033
+S A$_moduint$139 Def000028
+S A$_moduint$158 Def00003F
+S A$_moduint$149 Def000034
+S A$_moduint$159 Def000040
+S C$_moduint.c$50$0$0 Def000000
+S __modint Def00000A
+S F_moduint$_moduint_dummy$0$0 Def000000
+S XF_moduint$_moduint_dummy$0$0 Def000045
+S A$_moduint$110 Def000007
+S A$_moduint$120 Def000011
+S A$_moduint$111 Def000008
+S A$_moduint$130 Def00001F
+S A$_moduint$121 Def000013
+S A$_moduint$140 Def000029
+S A$_moduint$131 Def000021
+S A$_moduint$122 Def000014
+S A$_moduint$150 Def000036
+S A$_moduint$141 Def00002A
+S A$_moduint$132 Def000022
+S A$_moduint$123 Def000015
+S A$_moduint$114 Def00000A
+S __moduint Def000000
+S A$_moduint$160 Def000041
+S A$_moduint$151 Def000038
+S A$_moduint$124 Def000016
+S A$_moduint$115 Def00000B
+S A$_moduint$106 Def000000
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 E5 81 24 FE F8 86 01 18 86 00
+R 00 00 00 16
+T 00 00 0A
+R 00 00 00 16
+T 00 00 0A E8 49 60 36 7A 01
+R 00 00 00 16
+T 00 00 10
+R 00 00 00 16
+T 00 00 10 E8 25 E0 F8 E9 33 40 0E F9 E5 82 98 E5
+R 00 00 00 16
+T 00 00 1D 83 99 40 03 0A 80 EC
+R 00 00 00 16
+T 00 00 24
+R 00 00 00 16
+T 00 00 24 C3 E9
+R 00 00 00 16
+T 00 00 26
+R 00 00 00 16
+T 00 00 26 13 F9 E8 13 F8
+R 00 00 00 16
+T 00 00 2B
+R 00 00 00 16
+T 00 00 2B C3 E5 82 98 F5 F0 E5 83 99 40 05 F5 83
+R 00 00 00 16
+T 00 00 38 85 F0 82
+R 00 00 00 16
+T 00 00 3B
+R 00 00 00 16
+T 00 00 3B C3 E9 13 F9 E8 13 F8 DA E7
+R 00 00 00 16
+T 00 00 44
+R 00 00 00 16
+T 00 00 44 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_moduint
+F:F_moduint$_moduint_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_moduint$_moduint_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_mulint
+<REL>
+;!FILE librint/_mulint.asm
+XH3
+H 1A areas 1C global symbols
+M _mulint
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 22 flags 20 addr 0
+S C$_mulint.c$121$0$0 Def000000
+S A$_mulint$110 Def000009
+S A$_mulint$120 Def00001A
+S A$_mulint$111 Def00000A
+S A$_mulint$121 Def00001C
+S A$_mulint$112 Def00000C
+S A$_mulint$122 Def00001D
+S A$_mulint$113 Def00000F
+S C$_mulint.c$205$1$2 Def000000
+S G$_mulint_dummy$0$0 Def000000
+S A$_mulint$123 Def00001F
+S A$_mulint$114 Def000010
+S A$_mulint$105 Def000000
+S C$_mulint.c$206$1$2 Def000022
+S __mulint Def000000
+S A$_mulint$124 Def000021
+S A$_mulint$115 Def000011
+S A$_mulint$106 Def000002
+S A$_mulint$116 Def000012
+S A$_mulint$107 Def000004
+S A$_mulint$117 Def000014
+S A$_mulint$108 Def000005
+S A$_mulint$118 Def000016
+S A$_mulint$109 Def000006
+S A$_mulint$119 Def000018
+S __mulint_dummy Def000000
+S XG$_mulint_dummy$0$0 Def000022
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 74 FE 25 81 F8 E6 85 82 F0 A4 C0 E0 85
+R 00 00 00 16
+T 00 00 0D 82 F0 18 E6 A4 F5 82 D0 E0 25 F0 C5 83
+R 00 00 00 16
+T 00 00 1A 86 F0 A4 25 83 F5 83 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_mulint
+F:G$_mulint_dummy$0$0({2}DF,SI:S),C,0,0,0,0,0
+S:G$_mulint_dummy$0$0({2}DF,SI:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_divslong
+<REL>
+;!FILE librint/_divslong.asm
+XH3
+H 1A areas 45 global symbols
+M _divslong
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+S __divlong Ref000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 56 flags 20 addr 0
+S A$_divslong$110 Def000009
+S A$_divslong$120 Def000019
+S A$_divslong$111 Def00000A
+S A$_divslong$130 Def000027
+S A$_divslong$121 Def00001A
+S A$_divslong$112 Def00000C
+S A$_divslong$140 Def000031
+S A$_divslong$131 Def000028
+S A$_divslong$113 Def00000E
+S A$_divslong$104 Def000000
+S A$_divslong$150 Def00003A
+S A$_divslong$141 Def000032
+S A$_divslong$132 Def000029
+S A$_divslong$123 Def00001B
+S A$_divslong$114 Def00000F
+S A$_divslong$105 Def000001
+S __divslong Def000000
+S A$_divslong$160 Def00004A
+S A$_divslong$151 Def00003B
+S A$_divslong$142 Def000033
+S A$_divslong$133 Def00002A
+S A$_divslong$124 Def00001D
+S A$_divslong$115 Def000011
+S A$_divslong$161 Def00004C
+S A$_divslong$152 Def00003C
+S A$_divslong$143 Def000034
+S A$_divslong$134 Def00002B
+S A$_divslong$125 Def00001F
+S A$_divslong$116 Def000013
+S A$_divslong$107 Def000003
+S C$_divslong.c$253$1$2 Def000000
+S A$_divslong$162 Def00004E
+S A$_divslong$153 Def00003F
+S A$_divslong$144 Def000035
+S A$_divslong$135 Def00002C
+S A$_divslong$126 Def000020
+S A$_divslong$117 Def000014
+S A$_divslong$108 Def000006
+S C$_divslong.c$254$1$2 Def000056
+S C$_divslong.c$158$0$0 Def000000
+S F_divslong$_divslong_dummy$0$0 Def000000
+S A$_divslong$163 Def00004F
+S A$_divslong$154 Def000042
+S A$_divslong$145 Def000036
+S A$_divslong$136 Def00002D
+S A$_divslong$127 Def000021
+S A$_divslong$118 Def000016
+S A$_divslong$109 Def000008
+S A$_divslong$164 Def000051
+S A$_divslong$155 Def000043
+S A$_divslong$146 Def000037
+S A$_divslong$137 Def00002E
+S A$_divslong$128 Def000024
+S A$_divslong$119 Def000018
+S A$_divslong$165 Def000053
+S A$_divslong$156 Def000044
+S A$_divslong$147 Def000038
+S A$_divslong$138 Def00002F
+S A$_divslong$129 Def000026
+S A$_divslong$166 Def000054
+S A$_divslong$157 Def000045
+S A$_divslong$139 Def000030
+S A$_divslong$158 Def000047
+S A$_divslong$149 Def000039
+S A$_divslong$168 Def000055
+S A$_divslong$159 Def000049
+S XF_divslong$_divslong_dummy$0$0 Def000056
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 FB C2 D5 30 E7 15 D2 D5 E4 C3 95 82 F5
+R 00 00 00 16
+T 00 00 0D 82 E4 95 83 F5 83 E4 95 F0 F5 F0 E4 9B
+R 00 00 00 16
+T 00 00 1A FB
+R 00 00 00 16
+T 00 00 1B
+R 00 00 00 16
+T 00 00 1B E5 81 24 FE F8 E6 30 E7 15 B2 D5 18 18
+R 00 00 00 16
+T 00 00 28 18 E4 C3 96 F6 E4 08 96 F6 E4 08 96 F6
+R 00 00 00 16
+T 00 00 35 E4 08 96 F6
+R 00 00 00 16
+T 00 00 39
+R 00 00 00 16
+T 00 00 39 18 18 18 12 00 00 30 D5 13 FB E4 C3 95
+R 00 00 00 16 02 07 00 01
+T 00 00 46 82 F5 82 E4 95 83 F5 83 E4 95 F0 F5 F0
+R 00 00 00 16
+T 00 00 53 E4 9B
+R 00 00 00 16
+T 00 00 55
+R 00 00 00 16
+T 00 00 55 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_divslong
+F:F_divslong$_divslong_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_divslong$_divslong_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_modslong
+<REL>
+;!FILE librint/_modslong.asm
+XH3
+H 1A areas 41 global symbols
+M _modslong
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+S __modlong Ref000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 54 flags 20 addr 0
+S A$_modslong$120 Def000013
+S A$_modslong$111 Def000003
+S A$_modslong$130 Def000020
+S A$_modslong$121 Def000014
+S A$_modslong$112 Def000006
+S C$_modslong.c$153$0$0 Def000000
+S A$_modslong$140 Def00002F
+S A$_modslong$131 Def000022
+S A$_modslong$122 Def000016
+S A$_modslong$113 Def000008
+S A$_modslong$150 Def000039
+S A$_modslong$141 Def000030
+S A$_modslong$132 Def000023
+S A$_modslong$123 Def000018
+S A$_modslong$114 Def000009
+S __modslong Def000000
+S F_modslong$_modslong_dummy$0$0 Def000000
+S A$_modslong$160 Def000047
+S A$_modslong$151 Def00003A
+S A$_modslong$142 Def000031
+S A$_modslong$133 Def000025
+S A$_modslong$124 Def000019
+S A$_modslong$115 Def00000A
+S A$_modslong$161 Def000048
+S A$_modslong$143 Def000032
+S A$_modslong$134 Def000026
+S A$_modslong$125 Def00001A
+S A$_modslong$116 Def00000C
+S C$_modslong.c$253$1$2 Def000000
+S A$_modslong$162 Def00004A
+S A$_modslong$153 Def00003B
+S A$_modslong$144 Def000033
+S A$_modslong$135 Def000028
+S A$_modslong$117 Def00000E
+S A$_modslong$108 Def000000
+S C$_modslong.c$254$1$2 Def000054
+S A$_modslong$163 Def00004C
+S A$_modslong$154 Def00003E
+S A$_modslong$145 Def000034
+S A$_modslong$136 Def000029
+S A$_modslong$127 Def00001B
+S A$_modslong$118 Def00000F
+S A$_modslong$109 Def000001
+S A$_modslong$164 Def00004D
+S A$_modslong$146 Def000035
+S A$_modslong$137 Def00002A
+S A$_modslong$128 Def00001D
+S A$_modslong$119 Def000011
+S A$_modslong$165 Def00004F
+S A$_modslong$156 Def000041
+S A$_modslong$147 Def000036
+S A$_modslong$138 Def00002B
+S A$_modslong$129 Def00001F
+S A$_modslong$166 Def000051
+S A$_modslong$157 Def000042
+S A$_modslong$148 Def000037
+S A$_modslong$139 Def00002E
+S A$_modslong$167 Def000052
+S A$_modslong$158 Def000043
+S A$_modslong$149 Def000038
+S A$_modslong$159 Def000045
+S A$_modslong$169 Def000053
+S XF_modslong$_modslong_dummy$0$0 Def000054
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 F9 C2 D5 30 E7 15 D2 D5 E4 C3 95 82 F5
+R 00 00 00 16
+T 00 00 0D 82 E4 95 83 F5 83 E4 95 F0 F5 F0 E4 99
+R 00 00 00 16
+T 00 00 1A F9
+R 00 00 00 16
+T 00 00 1B
+R 00 00 00 16
+T 00 00 1B E5 81 24 FB F8 86 02 08 86 03 08 86 04
+R 00 00 00 16
+T 00 00 28 08 E6 FD 30 E7 0D E4 C3 9A FA E4 9B FB
+R 00 00 00 16
+T 00 00 35 E4 9C FC E4 9D FD
+R 00 00 00 16
+T 00 00 3B
+R 00 00 00 16
+T 00 00 3B 12 00 00 30 D5 12 E4 C3 95 82 F5 82 E4
+R 00 00 00 16 02 04 00 01
+T 00 00 48 95 83 F5 83 E4 95 F0 F5 F0 E4 99
+R 00 00 00 16
+T 00 00 53
+R 00 00 00 16
+T 00 00 53 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_modslong
+F:F_modslong$_modslong_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_modslong$_modslong_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_modulong
+<REL>
+;!FILE librint/_modulong.asm
+XH3
+H 1A areas 61 global symbols
+M _modulong
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 72 flags 20 addr 0
+S XF_modulong$_modlong_dummy$0$0 Def000072
+S A$_modulong$200 Def00006A
+S A$_modulong$110 Def000001
+S A$_modulong$201 Def00006B
+S A$_modulong$111 Def000003
+S A$_modulong$202 Def00006C
+S A$_modulong$130 Def000019
+S A$_modulong$112 Def000005
+S A$_modulong$203 Def00006D
+S A$_modulong$140 Def000026
+S A$_modulong$131 Def00001B
+S A$_modulong$113 Def000006
+S A$_modulong$204 Def00006E
+S A$_modulong$150 Def000031
+S A$_modulong$141 Def000027
+S A$_modulong$114 Def000008
+S __modulong Def000000
+S C$_modulong.c$332$1$2 Def000000
+S C$_modulong.c$191$0$0 Def000000
+S A$_modulong$205 Def000070
+S A$_modulong$160 Def00003E
+S A$_modulong$151 Def000033
+S A$_modulong$142 Def000028
+S A$_modulong$133 Def00001C
+S A$_modulong$124 Def000011
+S A$_modulong$115 Def000009
+S C$_modulong.c$333$1$2 Def000072
+S A$_modulong$161 Def00003F
+S A$_modulong$152 Def000034
+S A$_modulong$143 Def000029
+S A$_modulong$134 Def00001D
+S A$_modulong$125 Def000013
+S A$_modulong$116 Def00000B
+S A$_modulong$207 Def000071
+S A$_modulong$180 Def000053
+S A$_modulong$162 Def000040
+S A$_modulong$153 Def000036
+S A$_modulong$144 Def00002A
+S A$_modulong$135 Def00001E
+S A$_modulong$126 Def000014
+S A$_modulong$117 Def00000C
+S A$_modulong$181 Def000054
+S A$_modulong$172 Def000048
+S A$_modulong$163 Def000041
+S A$_modulong$154 Def000037
+S A$_modulong$145 Def00002B
+S A$_modulong$136 Def000021
+S A$_modulong$127 Def000015
+S A$_modulong$118 Def00000E
+S A$_modulong$109 Def000000
+S A$_modulong$191 Def000061
+S A$_modulong$182 Def000055
+S A$_modulong$173 Def00004A
+S A$_modulong$164 Def000042
+S A$_modulong$155 Def000038
+S A$_modulong$146 Def00002C
+S A$_modulong$137 Def000022
+S A$_modulong$128 Def000016
+S A$_modulong$119 Def00000F
+S A$_modulong$192 Def000062
+S A$_modulong$183 Def000057
+S A$_modulong$174 Def00004B
+S A$_modulong$165 Def000043
+S A$_modulong$156 Def000039
+S A$_modulong$147 Def00002D
+S A$_modulong$138 Def000024
+S A$_modulong$129 Def000017
+S A$_modulong$193 Def000063
+S A$_modulong$184 Def000058
+S A$_modulong$175 Def00004D
+S A$_modulong$166 Def000044
+S A$_modulong$157 Def00003B
+S A$_modulong$148 Def00002E
+S A$_modulong$139 Def000025
+S A$_modulong$194 Def000064
+S A$_modulong$185 Def00005A
+S A$_modulong$176 Def00004E
+S A$_modulong$167 Def000045
+S A$_modulong$158 Def00003C
+S A$_modulong$149 Def000030
+S A$_modulong$195 Def000065
+S A$_modulong$186 Def00005C
+S A$_modulong$177 Def00004F
+S A$_modulong$168 Def000046
+S A$_modulong$159 Def00003D
+S A$_modulong$196 Def000066
+S A$_modulong$187 Def00005E
+S A$_modulong$178 Def000051
+S A$_modulong$169 Def000047
+S A$_modulong$197 Def000067
+S A$_modulong$188 Def00005F
+S A$_modulong$179 Def000052
+S __modlong Def000011
+S A$_modulong$198 Def000068
+S A$_modulong$199 Def000069
+S F_modulong$_modlong_dummy$0$0 Def000000
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 F9 E5 81 24 FB F8 86 02 08 86 03 08 86
+R 00 00 00 16
+T 00 00 0D 04 08 86 05
+R 00 00 00 16
+T 00 00 11
+R 00 00 00 16
+T 00 00 11 78 00 EA 4B 4C 4D 60 58 78 00 C3
+R 00 00 00 16
+T 00 00 1C
+R 00 00 00 16
+T 00 00 1C 08 ED 20 E7 27 EA 25 E0 FA EB 33 FB EC
+R 00 00 00 16
+T 00 00 29 33 FC ED 33 FD E5 82 9A E5 83 9B E5 F0
+R 00 00 00 16
+T 00 00 36 9C E9 9D 50 E1 C3 ED 13 FD EC 13 FC EB
+R 00 00 00 16
+T 00 00 43 13 FB EA 13 FA
+R 00 00 00 16
+T 00 00 48
+R 00 00 00 16
+T 00 00 48 E5 82 9A E5 83 9B FE E5 F0 9C FF E9 9D
+R 00 00 00 16
+T 00 00 55 40 0A F9 8F F0 8E 83 E5 82 9A F5 82
+R 00 00 00 16
+T 00 00 61
+R 00 00 00 16
+T 00 00 61 C3 ED 13 FD EC 13 FC EB 13 FB EA 13 FA
+R 00 00 00 16
+T 00 00 6E D8 D8 E9
+R 00 00 00 16
+T 00 00 71
+R 00 00 00 16
+T 00 00 71 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_modulong
+F:F_modulong$_modlong_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_modulong$_modlong_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_divulong
+<REL>
+;!FILE librint/_divulong.asm
+XH3
+H 1A areas 5D global symbols
+M _divulong
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 6D flags 20 addr 0
+S XF_divulong$_divlong_dummy$0$0 Def00006D
+S A$_divulong$111 Def000006
+S A$_divulong$130 Def00001E
+S A$_divulong$112 Def000007
+S A$_divulong$140 Def00002D
+S A$_divulong$131 Def000020
+S A$_divulong$122 Def000010
+S A$_divulong$113 Def000008
+S A$_divulong$141 Def00002F
+S A$_divulong$132 Def000021
+S A$_divulong$123 Def000012
+S A$_divulong$114 Def000009
+S A$_divulong$105 Def000000
+S __divulong Def000000
+S C$_divulong.c$323$1$2 Def000000
+S A$_divulong$160 Def000045
+S A$_divulong$151 Def00003C
+S A$_divulong$142 Def000031
+S A$_divulong$133 Def000022
+S A$_divulong$124 Def000014
+S A$_divulong$115 Def00000B
+S A$_divulong$106 Def000001
+S C$_divulong.c$324$1$2 Def00006D
+S C$_divulong.c$192$0$0 Def000000
+S A$_divulong$170 Def00004E
+S A$_divulong$161 Def000046
+S A$_divulong$152 Def00003D
+S A$_divulong$143 Def000032
+S A$_divulong$134 Def000023
+S A$_divulong$125 Def000016
+S A$_divulong$116 Def00000C
+S A$_divulong$107 Def000003
+S A$_divulong$180 Def000058
+S A$_divulong$171 Def00004F
+S A$_divulong$162 Def000047
+S A$_divulong$153 Def00003E
+S A$_divulong$144 Def000034
+S A$_divulong$135 Def000025
+S A$_divulong$126 Def000018
+S A$_divulong$117 Def00000D
+S A$_divulong$108 Def000005
+S A$_divulong$190 Def000062
+S A$_divulong$181 Def000059
+S A$_divulong$172 Def000050
+S A$_divulong$163 Def000048
+S A$_divulong$154 Def00003F
+S A$_divulong$145 Def000036
+S A$_divulong$136 Def000027
+S A$_divulong$127 Def000019
+S A$_divulong$118 Def00000E
+S A$_divulong$191 Def000063
+S A$_divulong$182 Def00005A
+S A$_divulong$173 Def000051
+S A$_divulong$164 Def000049
+S A$_divulong$155 Def000040
+S A$_divulong$146 Def000037
+S A$_divulong$128 Def00001B
+S A$_divulong$119 Def00000F
+S A$_divulong$192 Def000064
+S A$_divulong$183 Def00005B
+S A$_divulong$174 Def000052
+S A$_divulong$156 Def000041
+S A$_divulong$147 Def000039
+S A$_divulong$138 Def000029
+S A$_divulong$129 Def00001D
+S A$_divulong$193 Def000065
+S A$_divulong$184 Def00005C
+S A$_divulong$175 Def000053
+S A$_divulong$166 Def00004A
+S A$_divulong$157 Def000042
+S A$_divulong$148 Def00003A
+S A$_divulong$139 Def00002B
+S A$_divulong$194 Def000066
+S A$_divulong$185 Def00005D
+S A$_divulong$176 Def000054
+S A$_divulong$167 Def00004B
+S A$_divulong$158 Def000043
+S A$_divulong$149 Def00003B
+S A$_divulong$186 Def00005E
+S A$_divulong$168 Def00004C
+S A$_divulong$159 Def000044
+S A$_divulong$196 Def000069
+S A$_divulong$187 Def00005F
+S A$_divulong$178 Def000056
+S A$_divulong$169 Def00004D
+S A$_divulong$188 Def000060
+S A$_divulong$179 Def000057
+S __divlong Def000006
+S A$_divulong$198 Def00006B
+S A$_divulong$189 Def000061
+S A$_divulong$199 Def00006C
+S F_divulong$_divlong_dummy$0$0 Def000000
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 FB E5 81 24 FB F8
+R 00 00 00 16
+T 00 00 06
+R 00 00 00 16
+T 00 00 06 E6 F9 08 7A 20 E4 FC FD FE FF
+R 00 00 00 16
+T 00 00 10
+R 00 00 00 16
+T 00 00 10 E5 82 25 82 F5 82 E5 83 33 F5 83 E5 F0
+R 00 00 00 16
+T 00 00 1D 33 F5 F0 EB 33 FB 40 17 DA E9 80 42
+R 00 00 00 16
+T 00 00 29
+R 00 00 00 16
+T 00 00 29 E5 82 25 82 F5 82 E5 83 33 F5 83 E5 F0
+R 00 00 00 16
+T 00 00 36 33 F5 F0 EB 33 FB
+R 00 00 00 16
+T 00 00 3C
+R 00 00 00 16
+T 00 00 3C EC 33 FC ED 33 FD EE 33 FE EF 33 FF EC
+R 00 00 00 16
+T 00 00 49 99 ED 96 EE 08 96 EF 08 96 18 18 40 13
+R 00 00 00 16
+T 00 00 56 EC 99 FC ED 96 FD EE 08 96 FE EF 08 96
+R 00 00 00 16
+T 00 00 63 FF 18 18 43 82 01
+R 00 00 00 16
+T 00 00 69
+R 00 00 00 16
+T 00 00 69 DA BE
+R 00 00 00 16
+T 00 00 6B
+R 00 00 00 16
+T 00 00 6B EB 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_divulong
+F:F_divulong$_divlong_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:F_divulong$_divlong_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+<FILE>
+_mullong
+<REL>
+;!FILE librint/_mullong.asm
+XH3
+H 1A areas 5A global symbols
+M _mullong
+O -mmcs51 --model-small
+S .__.ABS. Def000000
+A _CODE size 0 flags 0 addr 0
+A RSEG size 0 flags 8 addr 0
+A RSEG0 size 0 flags 8 addr 0
+A RSEG1 size 0 flags 8 addr 0
+A REG_BANK_0 size 8 flags 4 addr 0
+A DSEG size 0 flags 0 addr 0
+A ISEG size 0 flags 0 addr 0
+A IABS size 0 flags 8 addr 0
+A BSEG size 0 flags 80 addr 0
+A PSEG size 0 flags 50 addr 0
+A XSEG size 0 flags 40 addr 0
+A XABS size 0 flags 48 addr 0
+A XISEG size 0 flags 40 addr 0
+A HOME size 0 flags 20 addr 0
+A GSINIT0 size 0 flags 20 addr 0
+A GSINIT1 size 0 flags 20 addr 0
+A GSINIT2 size 0 flags 20 addr 0
+A GSINIT3 size 0 flags 20 addr 0
+A GSINIT4 size 0 flags 20 addr 0
+A GSINIT5 size 0 flags 20 addr 0
+A GSINIT size 0 flags 20 addr 0
+A GSFINAL size 0 flags 20 addr 0
+A CSEG size 70 flags 20 addr 0
+S A$_mullong$190 Def000067
+S A$_mullong$181 Def00005B
+S A$_mullong$172 Def000050
+S A$_mullong$163 Def000046
+S A$_mullong$154 Def00003A
+S A$_mullong$145 Def00002D
+S A$_mullong$136 Def000024
+S A$_mullong$127 Def000018
+S A$_mullong$118 Def00000C
+S A$_mullong$191 Def000068
+S A$_mullong$182 Def00005C
+S A$_mullong$173 Def000051
+S A$_mullong$164 Def000047
+S A$_mullong$155 Def00003B
+S A$_mullong$146 Def00002F
+S A$_mullong$137 Def000025
+S A$_mullong$128 Def000019
+S A$_mullong$119 Def00000E
+S A$_mullong$192 Def000069
+S A$_mullong$183 Def00005E
+S A$_mullong$174 Def000052
+S A$_mullong$165 Def000048
+S A$_mullong$156 Def00003C
+S A$_mullong$147 Def000030
+S A$_mullong$138 Def000027
+S A$_mullong$129 Def00001A
+S A$_mullong$193 Def00006B
+S A$_mullong$184 Def00005F
+S A$_mullong$175 Def000053
+S A$_mullong$166 Def000049
+S A$_mullong$157 Def00003D
+S A$_mullong$148 Def000031
+S A$_mullong$139 Def000028
+S A$_mullong$194 Def00006D
+S A$_mullong$185 Def000060
+S A$_mullong$176 Def000055
+S A$_mullong$167 Def00004B
+S A$_mullong$158 Def00003F
+S A$_mullong$149 Def000032
+S A$_mullong$195 Def00006F
+S A$_mullong$186 Def000061
+S A$_mullong$177 Def000057
+S A$_mullong$168 Def00004C
+S A$_mullong$159 Def000040
+S A$_mullong$187 Def000063
+S A$_mullong$178 Def000058
+S A$_mullong$188 Def000064
+S A$_mullong$179 Def000059
+S __mullong_dummy Def000000
+S A$_mullong$189 Def000065
+S C$_mullong.c$57$0$0 Def000000
+S XG$_mullong_dummy$0$0 Def000070
+S A$_mullong$110 Def000000
+S C$_mullong.c$310$1$2 Def000000
+S A$_mullong$120 Def00000F
+S A$_mullong$111 Def000002
+S C$_mullong.c$311$1$2 Def000070
+S A$_mullong$130 Def00001B
+S A$_mullong$121 Def000010
+S A$_mullong$112 Def000003
+S A$_mullong$140 Def000029
+S A$_mullong$131 Def00001D
+S A$_mullong$122 Def000011
+S A$_mullong$113 Def000005
+S G$_mullong_dummy$0$0 Def000000
+S A$_mullong$150 Def000034
+S A$_mullong$141 Def00002A
+S A$_mullong$132 Def00001E
+S A$_mullong$114 Def000007
+S __mullong Def000000
+S A$_mullong$160 Def000041
+S A$_mullong$151 Def000035
+S A$_mullong$142 Def00002B
+S A$_mullong$133 Def000020
+S A$_mullong$124 Def000013
+S A$_mullong$170 Def00004D
+S A$_mullong$161 Def000043
+S A$_mullong$152 Def000036
+S A$_mullong$134 Def000022
+S A$_mullong$125 Def000015
+S A$_mullong$116 Def000008
+S A$_mullong$180 Def00005A
+S A$_mullong$171 Def00004E
+S A$_mullong$162 Def000044
+S A$_mullong$153 Def000038
+S A$_mullong$144 Def00002C
+S A$_mullong$135 Def000023
+S A$_mullong$126 Def000017
+S A$_mullong$117 Def00000A
+A CONST size 0 flags 20 addr 0
+A XINIT size 0 flags 20 addr 0
+A CABS size 0 flags 28 addr 0
+T 00 00 00
+R 00 00 00 02
+T 00 00 00
+R 00 00 00 03
+T 00 00 00
+R 00 00 00 04
+T 00 00 00
+R 00 00 00 16
+T 00 00 00
+R 00 00 00 16
+T 00 00 00 AA F0 FB 74 FB 25 81 F8 E5 82 86 F0 A9
+R 00 00 00 16
+T 00 00 0D F0 08 A4 FC AD F0 E5 83 89 F0 A4 2D FD
+R 00 00 00 16
+T 00 00 1A E4 35 F0 FE E5 82 86 F0 A4 2D FD E5 F0
+R 00 00 00 16
+T 00 00 27 3E FE E4 33 FF EA 89 F0 A4 2E FE E5 F0
+R 00 00 00 16
+T 00 00 34 3F FF E5 83 86 F0 A4 2E FE E5 F0 3F FF
+R 00 00 00 16
+T 00 00 41 E5 82 08 86 F0 A4 2E FE E5 F0 3F FF EB
+R 00 00 00 16
+T 00 00 4E 89 F0 A4 2F FF E5 83 86 F0 A4 2F FF EA
+R 00 00 00 16
+T 00 00 5B 18 86 F0 A4 2F FF E5 82 08 08 86 F0 A4
+R 00 00 00 16
+T 00 00 68 2F 8E F0 8D 83 8C 82 22
+R 00 00 00 16
+</REL>
+<ADB>
+M:_mullong
+F:G$_mullong_dummy$0$0({2}DF,SV:S),C,0,0,0,0,0
+S:G$_mullong_dummy$0$0({2}DF,SV:S),C,0,0
+</ADB>
+</FILE>
+
+</FILES>
+
+</SDCCLIB>

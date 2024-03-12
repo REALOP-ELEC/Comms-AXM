@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<axchip>
+  <chip name="AX8052F131" hide="0"/>
+  <include name="AX8052"/>
+  <autodetect priority="1">
+    <save addr="0x7044" addrspace="xram"/>
+    <write addr="0x7044" addrspace="xram" value="0x47" mask="0xff"/>
+    <save addr="0xb1" addrspace="sfr"/>
+    <write addr="0xb1" addrspace="sfr" value="0x00" mask="0xff"/>
+    <save addr="0x8e" addrspace="sfr"/>
+    <write addr="0x8e" addrspace="sfr" value="0x15" mask="0xff"/>
+    <save addr="0x8c" addrspace="sfr"/>
+    <write addr="0x8c" addrspace="sfr" value="0x00" mask="0xff"/>
+    <compare addr="0x4000" addrspace="xram" value="0x21" mask="0xff"/>
+    <save addr="0x4001" addrspace="xram"/>
+    <write addr="0x4001" addrspace="xram" value="0x55" mask="0xff"/>
+    <compare addr="0x4001" addrspace="xram" value="0x55" mask="0xff"/>
+    <write addr="0x4001" addrspace="xram" value="0xaa" mask="0xff"/>
+    <compare addr="0x4001" addrspace="xram" value="0xaa" mask="0xff"/>
+  </autodetect>
+  <registers>
+    <reggroup name="Radio Revision and Interface Probing">
+      <register name="SILICONREVISION" addr="0x4000" addrspace="xram" readmask="0xff" writemask="0x00" default="0x21" readsafe="1" mappedtox="0" description="Silicon Revision"/>
+      <register name="SCRATCH" addr="0x4001" addrspace="xram" readmask="0xff" writemask="0xff" default="0xc5" readsafe="1" mappedtox="0" description="Scratch"/>
+    </reggroup>
+    <reggroup name="Radio Operating Mode">
+      <register name="PWRMODE" addr="0x4002" addrspace="xram" readmask="0xef" writemask="0xef" default="0x60" readsafe="1" mappedtox="0" description="Power Mode"/>
+    </reggroup>
+    <reggroup name="Radio Crystal Oscillator">
+      <register name="XTALOSC" addr="0x4003" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x02" readsafe="1" mappedtox="0" description="Crystal Oscillator Control"/>
+      <register name="XTALCAP" addr="0x404f" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="Crystal Oscillator Load Capacitance"/>
+    </reggroup>
+    <reggroup name="Radio FIFO">
+      <register name="FIFOCONTROL" addr="0x4004" addrspace="xram" readmask="0xff" writemask="0x03" default="0x00" readsafe="1" mappedtox="0" description="FIFO Control"/>
+      <register name="FIFOCONTROL2" addr="0x4037" addrspace="xram" readmask="0x03" writemask="0x83" default="0x00" readsafe="1" mappedtox="0" description="FIFO Control 2"/>
+      <register name="FIFOCOUNT" addr="0x4035" addrspace="xram" readmask="0x3f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="FIFO Count"/>
+      <register name="FIFOTHRESH" addr="0x4036" addrspace="xram" readmask="0x3f" writemask="0x3f" default="0x00" readsafe="1" mappedtox="0" description="FIFO Threshold"/>
+      <register name="FIFODATA" addr="0x4005" addrspace="xram" readmask="0xff" writemask="0xff" default="0x00" readsafe="0" mappedtox="0" description="FIFO Data"/>
+    </reggroup>
+    <reggroup name="Radio Interrupt Control">
+      <register name="IRQMASK" addr="0x4006" addrspace="xram" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="0" description="IRQ Mask"/>
+      <register name="IRQINVERSION" addr="0x400f" addrspace="xram" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="0" description="IRQ Inversion"/>
+      <register name="IRQREQUEST" addr="0x4007" addrspace="xram" readmask="0x7f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="IRQ Request"/>
+    </reggroup>
+    <reggroup name="Radio Interface and Pin Control">
+      <register name="PINCFG1" addr="0x400c" addrspace="xram" readmask="0x2f" writemask="0x2f" default="0x28" readsafe="1" mappedtox="0" description="Pin Configuration 1"/>
+      <register name="PINCFG2" addr="0x400d" addrspace="xram" readmask="0x22" writemask="0x22" default="0x00" readsafe="1" mappedtox="0" description="Pin Configuration 2"/>
+      <register name="PINCFG3" addr="0x400e" addrspace="xram" readmask="0x92" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Pin Configuration 3"/>
+    </reggroup>
+    <reggroup name="Radio Modulation and Framing">
+      <register name="MODULATION" addr="0x4010" addrspace="xram" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="0" description="Modulation"/>
+      <register name="ENCODING" addr="0x4011" addrspace="xram" readmask="0x1f" writemask="0x1f" default="0x02" readsafe="1" mappedtox="0" description="Encoding"/>
+      <register name="FRAMING" addr="0x4012" addrspace="xram" readmask="0x7f" writemask="0x7f" default="0x00" readsafe="1" mappedtox="0" description="Framing Mode"/>
+      <register name="CRCINIT0" addr="0x4017" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 0"/>
+      <register name="CRCINIT1" addr="0x4016" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 1"/>
+      <register name="CRCINIT2" addr="0x4015" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 2"/>
+      <register name="CRCINIT3" addr="0x4014" addrspace="xram" readmask="0xff" writemask="0xff" default="0xff" readsafe="1" mappedtox="0" description="CRC Initial Value 3"/>
+    </reggroup>
+    <reggroup name="Radio Voltage Regulator">
+      <register name="VREG" addr="0x401b" addrspace="xram" readmask="0x0f" writemask="0x00" default="0x00" readsafe="1" mappedtox="0" description="Voltage Regulator"/>
+    </reggroup>
+    <reggroup name="Radio Synthesizer">
+      <register name="FREQ0" addr="0x4023" addrspace="xram" readmask="0xff" writemask="0xff" default="0cd" readsafe="1" mappedtox="0" description="Frequency A 0"/>
+      <register name="FREQ1" addr="0x4022" addrspace="xram" readmask="0xff" writemask="0xff" default="0xcc" readsafe="1" mappedtox="0" description="Frequency A 1"/>
+      <register name="FREQ2" addr="0x4021" addrspace="xram" readmask="0xff" writemask="0xff" default="0x34" readsafe="1" mappedtox="0" description="Frequency A 2"/>
+      <register name="FREQ3" addr="0x4020" addrspace="xram" readmask="0xff" writemask="0xff" default="0x39" readsafe="1" mappedtox="0" description="Frequency A 3"/>
+      <register name="FREQB0" addr="0x401f" addrspace="xram" readmask="0xff" writemask="0xff" default="0xcd" readsafe="1" mappedtox="0" description="Frequency B 0"/>
+      <register name="FREQB1" addr="0x401e" addrspace="xram" readmask="0xff" writemask="0xff" default="0xcc" readsafe="1" mappedtox="0" description="Frequency B 1"/>
+      <register name="FREQB2" addr="0x401d" addrspace="xram" readmask="0xff" writemask="0xff" default="0x3f" readsafe="1" mappedtox="0" description="Frequency B 2"/>
+      <register name="FREQB3" addr="0x401c" addrspace="xram" readmask="0xff" writemask="0xff" default="0x39" readsafe="1" mappedtox="0" description="Frequency B 3"/>
+      <register name="PLLLOOP" addr="0x402c" addrspace="xram" readmask="0xbf" writemask="0xbf" default="0x1d" readsafe="1" mappedtox="0" description="PLL Loop Filter"/>
+      <register name="PLLRANGING" addr="0x402d" addrspace="xram" readmask="0xff" writemask="0x1f" default="0x08" readsafe="0" mappedtox="0" description="PLL Autoranging Control"/>
+    </reggroup>
+    <reggroup name="Radio Transmitter">
+      <register name="FSKDEV0" addr="0x4027" addrspace="xram" readmask="0xff" writemask="0xff" default="0x66" readsafe="1" mappedtox="0" description="FSK Deviation 0"/>
+      <register name="FSKDEV1" addr="0x4026" addrspace="xram" readmask="0xff" writemask="0xff" default="0x66" readsafe="1" mappedtox="0" description="FSK Deviation 1"/>
+      <register name="FSKDEV2" addr="0x4025" addrspace="xram" readmask="0xff" writemask="0xff" default="0x02" readsafe="1" mappedtox="0" description="FSK Deviation 2"/>
+      <register name="TXPWR" addr="0x4030" addrspace="xram" readmask="0x0f" writemask="0x0f" default="0x08" readsafe="1" mappedtox="0" description="Transmit Power"/>
+      <register name="TXBITRATEHI" addr="0x4031" addrspace="xram" readmask="0xff" writemask="0xff" default="0x09" readsafe="1" mappedtox="0" description="Transmitter Bitrate High"/>
+      <register name="TXBITRATELO" addr="0x4033" addrspace="xram" readmask="0xff" writemask="0xff" default="0x99" readsafe="1" mappedtox="0" description="Transmitter Bitrate Low"/>
+      <register name="TXBITRATEMID" addr="0x4032" addrspace="xram" readmask="0xff" writemask="0xff" default="0x9a" readsafe="1" mappedtox="0" description="Transmitter Bitrate Middle"/>
+      <register name="MODULATORMISC" addr="0x4034" addrspace="xram" readmask="0x03" writemask="0x03" default="0x03" readsafe="1" mappedtox="0" description="Modulator Miscellaneous Control"/>
+      <register name="FOURFSK" addr="0x4050" addrspace="xram" readmask="0x01" writemask="0x01" default="0x00" readsafe="1" mappedtox="0" description="4-FSK Control"/>
+    </reggroup>
+  </registers>
+</axchip>

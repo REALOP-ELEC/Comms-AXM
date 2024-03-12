@@ -1,0 +1,11 @@
+prefix=/usr/i686-w64-mingw32/sys-root/mingw
+exec_prefix=/usr/i686-w64-mingw32/sys-root/mingw
+libdir=/usr/i686-w64-mingw32/sys-root/mingw/lib
+includedir=/usr/i686-w64-mingw32/sys-root/mingw/include
+
+Name: libmfdbg
+Description: Axsem Microfoot Microcontroller Debugger Access
+Requires: glib-2.0 sigc++-2.0
+Version: 1.27
+Libs: -L${libdir} -laxevk-0.0.0
+Cflags: -I${includedir}/libmfdbg -I${libdir}/libmfdbg/include
